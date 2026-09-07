@@ -1338,7 +1338,7 @@ object-fit: cover;
 
 .parent-line {
   display: grid;
-  grid-template-columns: 13px 90px 50px 55px;
+  grid-template-columns: 16px 140px 50px 55px;
   justify-content: center;
   align-items: baseline;
 
