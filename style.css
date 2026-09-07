@@ -332,17 +332,17 @@ main,
 ========================================= */
 
 .join {
-min-height: 70svh;
+  min-height: auto;
 
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-padding-top: 180px;
-padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
-background: var(--paper);
+  background: var(--paper);
 }
 
 .join h2.join-title {
