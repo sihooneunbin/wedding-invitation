@@ -424,14 +424,29 @@ main,
    CALENDAR
 ========================================= */
 
+.calendar-section {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  text-align: center;
+}
+
+.calendar-section .section-label {
+  margin-bottom: 32px;
+}
+
 .calendar-section h2 {
+  margin-bottom: 48px;
+
+  font-family: "Cormorant Garamond", serif;
   font-size: 25px;
-  margin-bottom: 42px;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  color: #625d57;
 }
 
 .calendar {
   width: 100%;
-  max-width: 390px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -442,16 +457,16 @@ main,
 }
 
 .calendar-week {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 9px;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   color: #aaa39b;
 }
 
 .calendar-days {
-  row-gap: 17px;
+  row-gap: 19px;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 13px;
@@ -459,20 +474,19 @@ main,
 }
 
 .calendar-days span {
-  height: 28px;
+  width: 30px;
+  height: 30px;
+
+  margin: 0 auto;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.wedding-day-number {
-  position: relative;
-
+.calendar-days .wedding-day-number {
   width: 30px;
-  height: 30px !important;
-
-  margin: auto;
+  height: 30px;
 
   border: 1px solid #9d9184;
   border-radius: 50%;
@@ -481,38 +495,41 @@ main,
 }
 
 .calendar-bottom {
-  margin-top: 45px;
+  margin-top: 48px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 18px;
 
-  text-align: left;
+  gap: 18px;
 }
 
 .calendar-bottom strong {
   font-family: "Cormorant Garamond", serif;
   font-size: 42px;
   font-weight: 300;
+  line-height: 1;
+
   color: #665e57;
 }
 
 .calendar-bottom div {
   padding-left: 18px;
+
   border-left: 1px solid #d5d0c9;
 
   display: flex;
   flex-direction: column;
 
+  text-align: left;
+
   font-family: "Cormorant Garamond", serif;
   font-size: 11px;
-  line-height: 1.7;
-  letter-spacing: .12em;
-  color: var(--sub);
+  line-height: 1.8;
+  letter-spacing: 0.12em;
+
+  color: #817970;
 }
-
-
 /* =========================================
    OUR STORY
 ========================================= */
