@@ -1482,6 +1482,9 @@ object-fit: cover;
   text-align: left;
 }
 
+.couple-photo:last-child {
+  text-align: right;
+}
 .couple-photo img {
   width: 100%;
   aspect-ratio: 1 / 1.28;
