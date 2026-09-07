@@ -770,9 +770,10 @@ object-fit: cover;
   margin-top: 35px;
 }
 
-.map-placeholder {
+#kakaoMap {
+  width: 100%;
   height: 260px;
-
+}
   display: flex;
   align-items: center;
   justify-content: center;
