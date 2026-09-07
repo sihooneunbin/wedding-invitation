@@ -13,18 +13,18 @@ document.querySelectorAll(".account-title").forEach((button) => {
 
     const item = button.closest(".account-item");
     const content = item.querySelector(".account-content");
-    const icon = button.querySelector("em");
 
     const isOpen = content.classList.contains("active");
 
-    /* 다른 계좌 닫기 */
+
+    /* 모든 계좌 닫기 */
 
     document.querySelectorAll(".account-content").forEach((other) => {
       other.classList.remove("active");
     });
 
-    document.querySelectorAll(".account-title em").forEach((otherIcon) => {
-      otherIcon.textContent = "＋";
+    document.querySelectorAll(".account-title").forEach((otherButton) => {
+      otherButton.classList.remove("active");
     });
 
 
@@ -33,18 +33,13 @@ document.querySelectorAll(".account-title").forEach((button) => {
     if (!isOpen) {
 
       content.classList.add("active");
-
-      if (icon) {
-        icon.textContent = "−";
-      }
+      button.classList.add("active");
 
     }
 
   });
 
 });
-
-
 /* =========================================
    ACCOUNT COPY
 ========================================= */
