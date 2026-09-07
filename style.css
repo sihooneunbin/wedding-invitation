@@ -730,7 +730,7 @@ object-fit: cover;
 }
 
 .venue h2 {
-  font-size: 23px;
+  font-size: 21px;
 }
 
 .venue-korean {
@@ -760,7 +760,7 @@ object-fit: cover;
 .venue-info {
   margin-top: 25px;
 
-  font-size: 11px;
+  font-size: 14px;
   line-height: 2;
   color: #777069;
 }
