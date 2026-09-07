@@ -346,13 +346,13 @@ background: var(--paper);
 }
 
 .join-title {
-font-family: "Cormorant Garamond", serif;
-font-size: 5px;
-line-height: 1.15;
-letter-spacing: .13em;
-text-align: center;
+  font-family:"Cormorant Garamond",serif;
+  font-size:15px;
+  line-height:1.15;
+  letter-spacing:.13em;
+  text-align:center;
+  color:#4b4844;
 }
-
 .join-photo {
 width: 100%;
 margin-top: 65px;
@@ -1635,8 +1635,4 @@ body::before {
 
   opacity: 0.75;
   mix-blend-mode: multiply;
-}
-.join-title {
-  font-size: 5px !important;
-  color: red !important;
 }
