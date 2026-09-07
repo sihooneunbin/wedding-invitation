@@ -1077,46 +1077,83 @@ main,
 ========================================= */
 
 .share {
-  background: var(--paper);
+  padding: 38px 28px 105px;
+  background: var(--bg);
+  text-align: center;
 }
 
-.share h2 {
-  margin-bottom: 45px;
-
-  font-size: 28px;
-  line-height: 1.2;
+.share-line {
+  width: 31px;
+  height: 1px;
+  margin: 0 auto 39px;
+  background: #9f9992;
 }
 
-.share-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.share-buttons button {
-  width: 120px;
-  height: 52px;
-
-  border: 1px solid #d5d0c9;
-  background: transparent;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
+.share .section-label {
+  margin-bottom: 25px;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 11px;
-  letter-spacing: .1em;
-  color: #706961;
+  font-weight: 400;
+  letter-spacing: .30em;
+  color: #625d57;
 }
 
-.share-buttons button span {
-  font-family: sans-serif;
-  font-size: 12px;
+.share-text {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #68625c;
 }
 
+.share-buttons {
+  margin-top: 48px;
 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.share-item {
+  width: 46px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+
+  color: #6d6760;
+}
+
+.share-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e5e3df;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #66625d;
+}
+
+.share-item > span:last-child {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  letter-spacing: .16em;
+  color: #716b65;
+}
+
+.share-item:active .share-circle {
+  transform: scale(.94);
+}
 /* =========================================
    ENDING
 ========================================= */
