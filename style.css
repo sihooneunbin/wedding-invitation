@@ -787,13 +787,13 @@ object-fit: cover;
 }
 
 .map-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  display: flex;
+  width: 100%;
   border-bottom: 1px solid var(--line);
 }
 
 .map-link {
+  flex: 1;
   padding: 18px 4px;
 
   display: flex;
@@ -820,8 +820,6 @@ object-fit: cover;
   font-size: 9px;
   color: var(--sub);
 }
-
-
 /* =========================================
    TRANSPORT
 ========================================= */
