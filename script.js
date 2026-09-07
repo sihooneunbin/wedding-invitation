@@ -219,3 +219,35 @@ if (storyGallery) {
   });
 
 }
+KakaoMapInit();
+
+function KakaoMapInit() {
+  const container = document.getElementById("kakaoMap");
+
+  if (!container) return;
+
+  const mapOption = {
+    center: new kakao.maps.LatLng(35.1699, 129.1327),
+    level: 3
+  };
+
+  const map = new kakao.maps.Map(container, mapOption);
+
+  const geocoder = new kakao.maps.services.Geocoder();
+
+  geocoder.addressSearch(
+    "부산광역시 해운대구 센텀중앙로 79",
+    function(result, status) {
+      if (status === kakao.maps.services.Status.OK) {
+        const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+        const marker = new kakao.maps.Marker({
+          map: map,
+          position: coords
+        });
+
+        map.setCenter(coords);
+      }
+    }
+  );
+}
