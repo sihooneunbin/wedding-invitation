@@ -1516,3 +1516,80 @@ object-fit: cover;
   width: 100%;
   min-width: 0;
 }
+/* =========================================
+   GALLERY MODAL
+========================================= */
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(20, 20, 20, 0.96);
+}
+
+.gallery-modal.active {
+  display: flex;
+}
+
+#galleryModalImage {
+  max-width: 90%;
+  max-height: 85vh;
+
+  object-fit: contain;
+}
+
+.gallery-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  border: 0;
+  background: transparent;
+
+  font-size: 32px;
+  font-weight: 200;
+  color: #fff;
+
+  z-index: 2;
+}
+
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: 0;
+  background: transparent;
+
+  font-size: 42px;
+  font-weight: 200;
+  color: #fff;
+
+  z-index: 2;
+}
+
+.gallery-prev {
+  left: 15px;
+}
+
+.gallery-next {
+  right: 15px;
+}
+
+.gallery-count {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 12px;
+  letter-spacing: .15em;
+  color: #fff;
+}
