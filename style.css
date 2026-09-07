@@ -221,7 +221,15 @@ main,
 .small-title {
   margin-bottom: 18px;
 }
+.wedding-day-label {
+  margin-bottom: 18px;
 
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .25em;
+  color: #a49a90;
+}
 .hero h1 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
