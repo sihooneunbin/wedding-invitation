@@ -570,72 +570,75 @@ main,
 ========================================= */
 
 .story {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 105px 0 110px;
+  background: #faf9f6;
 }
 
-.story h2 {
-  margin-bottom: 38px;
+.story .section-label {
+  margin-bottom: 48px;
+  padding-left: 30px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  color: #a49a90;
 }
 
-.gallery {
+
+/* -----------------------------------------
+   GALLERY
+----------------------------------------- */
+
+.story-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 3px;
 }
 
-.gallery-item {
-  aspect-ratio: 1 / 1;
+.story-item {
+  position: relative;
   overflow: hidden;
-  background: #e8e4de;
+  aspect-ratio: 1 / 1;
 }
 
-.gallery-item.large {
+.story-item.story-wide {
   grid-column: span 2;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2 / 1.15;
 }
 
-.gallery-item.wide {
-  grid-column: span 2;
-  aspect-ratio: 2 / 1;
+.story-item.story-tall {
+  aspect-ratio: 1 / 1.35;
 }
 
-.gallery-item img {
+.story-item img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
 }
 
-.gallery-more {
+
+/* -----------------------------------------
+   MORE
+----------------------------------------- */
+
+.story-more {
   aspect-ratio: 1 / 1;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  background: #eeeae4;
+  background: #f3f0eb;
+}
 
+.story-more span {
   font-family: "Cormorant Garamond", serif;
-  color: #80776f;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #827a72;
 }
-
-.gallery-more span {
-  font-size: 27px;
-  line-height: 1;
-}
-
-.gallery-more small {
-  margin-top: 6px;
-
-  font-size: 9px;
-  letter-spacing: .18em;
-}
-
-
 /* =========================================
    VENUE
 ========================================= */
