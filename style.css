@@ -859,13 +859,13 @@ object-fit: cover;
   margin-bottom: 7px;
 
   font-family: "Pretendard", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: .12em;
 }
 
 .transport-list p {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 2;
   color: var(--sub);
 }
