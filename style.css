@@ -253,19 +253,18 @@ main,
   background:#bbb4ac;
 }
 
-.hero-date {
-  font-family: "Pretendard", serif;
-  font-size: 16px;
-  letter-spacing: .12em;
+.hero-date,
+.hero-place {
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0;
+  color: #6f6962;
 }
 
 .hero-place {
   margin-top: 10px;
-
-  font-size: 13px;
-  line-height: 1.8;
-  letter-spacing: .01em;
-  color: var(--sub);
 }
 /* =========================================
    COMMON SECTION
