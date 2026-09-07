@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap');
 @font-face {
-  font-family: "Belgan Aesthetic";
+  font-family: "Cormorant Garamond";
   src: url("Belgan Aesthetic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -85,7 +85,7 @@ main,
 }
 
 .header-title {
-  font-family:"Belgan Aesthetic", serif;
+  font-family:"Cormorant Garamond", serif;
   font-size: 11px;
   letter-spacing: 0.22em;
   color: #756f69;
@@ -159,7 +159,7 @@ main,
 }
 
 .menu-inner a {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   letter-spacing: .12em;
 }
@@ -218,7 +218,7 @@ main,
 }
 .small-title,
 .section-label {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 11px;
   letter-spacing: .25em;
   color: var(--sub);
@@ -230,14 +230,14 @@ main,
 .wedding-day-label {
   margin-bottom: 18px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: .25em;
   color: #a49a90;
 }
 .hero h1 {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 1.05;
@@ -285,7 +285,7 @@ main,
 }
 
 .section h2 {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 29px;
   font-weight: 400;
   letter-spacing: .08em;
@@ -306,7 +306,7 @@ main,
 }
 
 .names {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 28px;
   line-height: 1.3;
   letter-spacing: .1em;
@@ -324,7 +324,7 @@ main,
 .wedding-info {
   margin-top: 38px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 12px;
   line-height: 2.1;
   letter-spacing: .12em;
@@ -351,7 +351,7 @@ main,
 }
 
 .join h2.join-title {
-  font-family:"Belgan Aesthetic", serif !important;
+  font-family:"Cormorant Garamond", serif !important;
   font-size:16px !important;
   line-height:1.15 !important;
   letter-spacing:.13em;
@@ -429,7 +429,7 @@ main,
 .calendar-section .section-label {
   margin-bottom: 43px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.32em;
@@ -439,7 +439,7 @@ main,
 .calendar-section h2 {
   margin-bottom: 53px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 1;
@@ -467,7 +467,7 @@ main,
 .calendar-week {
   margin-bottom: 31px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -477,7 +477,7 @@ main,
 .calendar-days {
   row-gap: 26px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 14px;
   font-weight: 400;
   color: #746d66;
@@ -533,7 +533,7 @@ main,
 }
 
 .calendar-bottom strong {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 32px;
   font-weight: 300;
   line-height: 1;
@@ -553,7 +553,7 @@ main,
   justify-content: center;
   align-items: flex-start;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 1.9;
@@ -574,7 +574,7 @@ main,
   margin-bottom: 48px;
   padding-left: 30px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.32em;
@@ -629,7 +629,7 @@ main,
 }
 
 .more-text strong {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 1;
@@ -637,7 +637,7 @@ main,
 
 .more-text span {
   margin-top: 5px;
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   letter-spacing: 0.14em;
 }
@@ -702,7 +702,7 @@ main,
 }
 
 .story-more span {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   letter-spacing: 0.18em;
   color: #827a72;
@@ -798,7 +798,7 @@ main,
 }
 
 .map-link strong {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: .08em;
@@ -1032,7 +1032,7 @@ main,
   border: 1px solid #d1cbc3;
   background: transparent;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 9px;
   letter-spacing: .08em;
   color: #716960;
@@ -1087,7 +1087,7 @@ main,
 .share .section-label {
   margin-bottom: 25px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: .30em;
@@ -1140,7 +1140,7 @@ main,
 }
 
 .share-item > span:last-child {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   letter-spacing: .16em;
   color: #716b65;
@@ -1183,14 +1183,14 @@ main,
 .ending-text > p {
   margin-bottom: 22px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 13px;
   letter-spacing: .25em;
   color: var(--sub);
 }
 
 .ending-text h2 {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 29px;
   font-weight: 400;
   letter-spacing: .1em;
@@ -1211,7 +1211,7 @@ main,
 
   margin-top: 28px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 11px;
   letter-spacing: .15em;
   color: var(--sub);
@@ -1371,7 +1371,7 @@ main,
 .message .section-label {
   margin-bottom: 72px;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: .32em;
@@ -1491,7 +1491,7 @@ main,
 }
 
 .couple-photo p em {
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   font-weight: 400;
   color: #3f3b37;
@@ -1584,7 +1584,7 @@ main,
   left: 50%;
   transform: translateX(-50%);
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 12px;
   letter-spacing: .15em;
   color: #fff;
@@ -1633,7 +1633,7 @@ body::before {
   margin-top: 30px;
   text-align: center;
 
-  font-family: "Belgan Aesthetic", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: .12em;
