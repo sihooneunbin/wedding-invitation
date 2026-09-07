@@ -84,8 +84,6 @@ document.querySelectorAll(".copy-account").forEach((button) => {
 
 /* =========================================
    LINK COPY
-========================================= */
-
 const copyLink = document.getElementById("copyLink");
 
 if (copyLink) {
@@ -96,12 +94,18 @@ if (copyLink) {
 
       await navigator.clipboard.writeText(window.location.href);
 
-      const originalText = copyLink.innerHTML;
+      const circle = copyLink.querySelector(".share-circle");
+      const label = copyLink.querySelector("span:last-child");
 
-      copyLink.innerHTML = "<span>✓</span> COPIED";
+      const originalCircle = circle.textContent;
+      const originalLabel = label.textContent;
+
+      circle.textContent = "✓";
+      label.textContent = "COPIED";
 
       setTimeout(() => {
-        copyLink.innerHTML = originalText;
+        circle.textContent = originalCircle;
+        label.textContent = originalLabel;
       }, 1500);
 
     } catch (error) {
@@ -113,8 +117,6 @@ if (copyLink) {
   });
 
 }
-
-
 /* =========================================
    KAKAO SHARE
 ========================================= */
