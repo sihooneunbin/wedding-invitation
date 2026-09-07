@@ -195,7 +195,7 @@ main,
 }
 
 .hero-photo {
-  width: min(100%, 390px);
+  width: min(100%, 330px);
   aspect-ratio: 3 / 4;
 
   overflow: hidden;
@@ -212,7 +212,7 @@ main,
 }
 
 .hero-content {
-  padding-top:38px;
+  padding-top:25px;
   width:100%;
   text-align:left;
 }
