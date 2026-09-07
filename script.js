@@ -374,3 +374,18 @@ galleryModal.addEventListener("touchend", (e) => {
 
 /* 실행 */
 setupGalleryModal();
+/* D-DAY */
+
+const weddingDate = new Date("2026-12-12T16:00:00");
+const today = new Date();
+
+today.setHours(0, 0, 0, 0);
+
+const diff = weddingDate - today;
+const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+const dday = document.getElementById("ddayNumber");
+
+if (dday) {
+  dday.textContent = days > 0 ? `D-${days} ෆ` : "D-DAY ෆ";
+}
