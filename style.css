@@ -1189,7 +1189,7 @@ main,
   margin-bottom: 22px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: .25em;
   color: var(--sub);
 }
@@ -1443,4 +1443,16 @@ main,
 /* 대절버스 마지막 안내문 */
 .info-block:last-child > p {
   margin-top: 34px;
+}
+/* =========================================
+   SECTION LABEL SIZE
+========================================= */
+
+.section-label,
+.calendar-section .section-label,
+.story .section-label,
+.message .section-label,
+.account .section-label,
+.share .section-label {
+  font-size: 13px;
 }
