@@ -974,6 +974,7 @@ main,
 .account-content {
   display: none;
 
+  width: 100%;
   padding: 5px 0 25px;
 }
 
@@ -982,40 +983,39 @@ main,
 }
 
 .account-person {
-  padding: 12px 0;
+  width: 100%;
+  min-height: 60px;
 
-  display: flex;
-  gap: 15px;
-
-  font-size: 11px;
-}
-
-.account-person span {
-  color: var(--sub);
-}
-
-.account-number {
-  padding: 15px;
+  padding: 0 10px;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
 
-  background: #eeebe6;
+  border: 1px solid var(--line);
+  margin-bottom: 8px;
+
+  font-size: 12px;
 }
 
-.account-number span {
-  font-size: 9px;
-  color: var(--sub);
-}
-
-.account-number strong {
-  flex: 1;
-
-  font-family: "Cormorant Garamond", serif;
+.account-person > strong {
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: .05em;
+  color: #45413d;
+}
+
+.account-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+
+  background: transparent;
+}
+.account-number span {
+  font-size: 10px;
+  color: #77716a;
+  white-space: nowrap;
 }
 
 .copy-account {
