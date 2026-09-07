@@ -1646,7 +1646,7 @@ body::before {
 .kakao-icon::after {
   content: "";
   position: absolute;
-  left: 3px;
+  left: 2px;
   bottom: -5px;
   width: 8px;
   height: 8px;
