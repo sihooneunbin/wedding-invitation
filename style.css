@@ -730,7 +730,8 @@ object-fit: cover;
 }
 
 .venue h2 {
-  font-size: 21px;
+  font-family: "Pretendard", sans-serif;
+  font-size: 20px;
 }
 
 .venue-korean {
