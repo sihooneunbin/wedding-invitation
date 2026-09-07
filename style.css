@@ -352,7 +352,9 @@ main,
   letter-spacing:.13em;
   text-align:center;
   color:#4b4844 !important;
+  font-style: italic;
 }
+
 /* =========================================
    INVITATION
 ========================================= */
