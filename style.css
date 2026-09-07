@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap');
-
+@font-face {
+  font-family: "Belgan Aesthetic";
+  src: url("Belgan Aesthetic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --bg: #faf9f6;
   --paper: #f5f2ed;
