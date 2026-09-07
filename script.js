@@ -121,22 +121,22 @@ if (copyLink) {
 const kakaoShare = document.getElementById("kakaoShare");
 
 if (kakaoShare) {
-
   kakaoShare.addEventListener("click", () => {
 
-    /*
-      카카오톡 공유 기능은
-      카카오 Developers 앱 키를 연결한 후
-      실제 공유 기능을 넣을 예정입니다.
-    */
+    Kakao.Share.sendDefault({
+      objectType: "text",
 
-    alert("카카오톡 공유 기능은 실제 청첩장 완성 단계에서 연결할게요. 🤍");
+      text: "시훈 & 은빈의 결혼식에 초대합니다. 🤍",
+
+      link: {
+        mobileWebUrl: window.location.href,
+        webUrl: window.location.href
+      }
+
+    });
 
   });
-
 }
-
-
 /* =========================================
    SCROLL ANIMATION
 ========================================= */
