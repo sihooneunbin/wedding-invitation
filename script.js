@@ -3,44 +3,6 @@
    SIHOON & EUNBIN
 ========================================= */
 
-
-/* =========================================
-   MENU
-========================================= */
-
-const menuButton = document.getElementById("menuButton");
-const menu = document.getElementById("menu");
-const menuClose = document.getElementById("menuClose");
-
-if (menuButton && menu) {
-  menuButton.addEventListener("click", () => {
-    menu.classList.add("active");
-    document.body.style.overflow = "hidden";
-  });
-}
-
-if (menuClose && menu) {
-  menuClose.addEventListener("click", () => {
-    menu.classList.remove("active");
-    document.body.style.overflow = "";
-  });
-}
-
-
-/* 메뉴 항목 클릭 */
-
-document.querySelectorAll(".menu a").forEach((link) => {
-
-  link.addEventListener("click", () => {
-
-    menu.classList.remove("active");
-    document.body.style.overflow = "";
-
-  });
-
-});
-
-
 /* =========================================
    ACCOUNT ACCORDION
 ========================================= */
