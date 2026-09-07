@@ -249,14 +249,14 @@ main,
 
 .hero-date {
   font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: .12em;
 }
 
 .hero-place {
-  margin-top: 12px;
+  margin-top: 10px;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: .01em;
   color: var(--sub);
