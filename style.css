@@ -1636,24 +1636,21 @@ body::before {
 }
 .kakao-icon {
   position: relative;
-}
-
-.kakao-icon::before {
-  content: "";
-  width: 24px;
-  height: 17px;
+  display: block;
+  width: 25px;
+  height: 19px;
   border-radius: 50%;
   background: #77736f;
-  display: block;
 }
 
 .kakao-icon::after {
   content: "";
   position: absolute;
-  left: 9px;
-  top: 18px;
-  width: 7px;
-  height: 7px;
+  left: 3px;
+  bottom: -5px;
+  width: 8px;
+  height: 8px;
   background: #77736f;
+  transform: rotate(20deg);
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
