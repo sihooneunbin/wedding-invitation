@@ -207,9 +207,10 @@ main,
 }
 
 .hero-content {
-  padding-top: 38px;
+  padding-top:38px;
+  width:100%;
+  text-align:left;
 }
-
 .small-title,
 .section-label {
   font-family: "Cormorant Garamond", serif;
@@ -239,20 +240,17 @@ main,
 }
 
 .hero h1 span {
-  display: block;
-  margin: 9px 0;
-
-  font-size: 17px;
-  color: var(--accent);
+  display:block;
+  margin:9px 0;
+  font-size:17px;
+  color:var(--accent);
+  text-align:left;
 }
-
 .hero-line {
-  width: 28px;
-  height: 1px;
-
-  margin: 25px auto;
-
-  background: #bbb4ac;
+  width:28px;
+  height:1px;
+  margin:25px 0;
+  background:#bbb4ac;
 }
 
 .hero-date {
