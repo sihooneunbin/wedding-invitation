@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Noto+Serif+KR:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap');
 
 :root {
   --bg: #faf9f6;
@@ -23,7 +23,7 @@ html {
 body {
   background: #e8e5df;
   color: var(--text);
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard", serif;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -371,7 +371,7 @@ main,
 .invitation h2 {
   margin-bottom: 38px;
 
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard", serif;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.8;
@@ -410,7 +410,7 @@ main,
 }
 
 .invitation-names span {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard", serif;
   font-size: 14px;
 }
 
@@ -923,7 +923,7 @@ main,
 }
 
 .account-title span {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard", serif;
   font-size: 12px;
   font-weight: 400;
   color: #45413d;
@@ -1058,7 +1058,7 @@ main,
 .message h2 {
   margin-bottom: 30px;
 
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard", serif;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.8;
