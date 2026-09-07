@@ -717,6 +717,8 @@ main,
 ========================================= */
 
 .venue {
+  padding-top: 115px;
+  padding-bottom: 25px;
   background: var(--paper);
 }
 
@@ -816,6 +818,8 @@ main,
 ========================================= */
 
 .transport {
+  padding-top: 25px;
+  padding-bottom: 90px;
   text-align: left;
 }
 
