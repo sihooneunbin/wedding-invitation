@@ -226,3 +226,75 @@ window.addEventListener("load", () => {
   }
 
 });
+/* OUR STORY */
+
+const storyPhotos = [
+  "story01.jpg",
+  "story02.jpg",
+  "story03.jpg",
+  "story04.jpg",
+  "story05.jpg",
+  "story06.jpg"
+];
+
+const storyGallery = document.querySelector(".story-gallery");
+
+if (storyGallery) {
+
+  const visibleCount = 6;
+
+  function createStoryItem(photo) {
+    const item = document.createElement("div");
+    item.className = "story-item";
+
+    item.innerHTML = `
+      <img src="images/${photo}" alt="">
+    `;
+
+    return item;
+  }
+
+  storyPhotos.slice(0, visibleCount).forEach((photo) => {
+    storyGallery.appendChild(createStoryItem(photo));
+  });
+
+  const remainingCount =
+    storyPhotos.length - visibleCount;
+
+  if (remainingCount > 0) {
+
+    const moreItem = document.createElement("div");
+
+    moreItem.className =
+      "story-item story-more";
+
+    moreItem.innerHTML = `
+      <img src="images/${storyPhotos[5]}" alt="">
+
+      <div class="more-text">
+        <strong>+${remainingCount}</strong>
+        <span>MORE</span>
+      </div>
+    `;
+
+    storyGallery.replaceChild(
+      moreItem,
+      storyGallery.children[5]
+    );
+
+    moreItem.addEventListener("click", () => {
+
+      storyPhotos.slice(visibleCount).forEach((photo) => {
+
+        const item = createStoryItem(photo);
+
+        item.classList.add("extra-photo");
+
+        storyGallery.appendChild(item);
+
+      });
+
+      moreItem.remove();
+    });
+  }
+}
