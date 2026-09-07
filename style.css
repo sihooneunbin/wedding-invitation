@@ -593,10 +593,9 @@ object-fit: cover;
 }
 
 .story-gallery {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
+  gap: 3px;
 }
 
 .story-item {
