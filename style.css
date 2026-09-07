@@ -1331,13 +1331,14 @@ main,
 ========================================= */
 
 .message {
-  padding: 95px 28px 105px;
+  padding: 105px 28px 115px;
   background: var(--bg);
   text-align: center;
 }
 
 .message .section-label {
-  margin-bottom: 62px;
+  margin-bottom: 72px;
+
   font-family: "Cormorant Garamond", serif;
   font-size: 10px;
   font-weight: 400;
@@ -1345,44 +1346,64 @@ main,
   color: #a49a90;
 }
 
+
+/* 각각의 안내 묶음 */
 .info-block {
   color: #55514c;
 }
 
+
+/* 피로연 → 대절버스 사이 */
 .info-block + .info-block {
-  margin-top: 72px;
+  margin-top: 78px;
 }
 
+
+/* 제목 */
 .info-block h3 {
-  margin-bottom: 25px;
-  font-size: 16px;
+  margin-bottom: 30px;
+
+  font-size: 15px;
   font-weight: 500;
+  line-height: 1.5;
   color: #3f3b37;
 }
 
+
+/* 기본 본문 */
 .info-block p {
   font-size: 11px;
-  line-height: 2.45;
+  line-height: 2.35;
   letter-spacing: -0.025em;
 }
 
+
+/* 본문 문단 사이 */
 .info-block > p + p {
-  margin-top: 27px;
+  margin-top: 31px;
 }
 
+
+/* 날짜 / 주소 */
 .info-detail {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
+
+/* 날짜와 주소 */
 .info-detail p {
   line-height: 2.2;
   color: #77716a;
 }
 
+
+/* 날짜와 주소 사이 */
 .info-detail p + p {
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
+
+/* 대절버스 마지막 안내문 */
 .info-block:last-child > p {
-  margin-top: 32px;
+  margin-top: 34px;
 }
