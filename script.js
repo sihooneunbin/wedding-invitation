@@ -1,53 +1,107 @@
-/* ========================================
+/* =========================================
    WEDDING INVITATION
    SIHOON & EUNBIN
-======================================== */
+========================================= */
 
 
-/* ========================================
-   ACCOUNT ACCORDION
-======================================== */
+/* =========================================
+   MENU
+========================================= */
 
-const accountTitles = document.querySelectorAll(".account-title");
+const menuButton = document.getElementById("menuButton");
+const menu = document.getElementById("menu");
+const menuClose = document.getElementById("menuClose");
 
-accountTitles.forEach((title) => {
-  title.addEventListener("click", () => {
+if (menuButton && menu) {
+  menuButton.addEventListener("click", () => {
+    menu.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+}
 
-    const content = title.nextElementSibling;
-    const icon = title.querySelector("span");
+if (menuClose && menu) {
+  menuClose.addEventListener("click", () => {
+    menu.classList.remove("active");
+    document.body.style.overflow = "";
+  });
+}
 
-    content.classList.toggle("active");
 
-    if (content.classList.contains("active")) {
-      icon.textContent = "−";
-    } else {
-      icon.textContent = "＋";
-    }
+/* 메뉴 항목 클릭 */
+
+document.querySelectorAll(".menu a").forEach((link) => {
+
+  link.addEventListener("click", () => {
+
+    menu.classList.remove("active");
+    document.body.style.overflow = "";
 
   });
+
 });
 
 
-/* ========================================
+/* =========================================
+   ACCOUNT ACCORDION
+========================================= */
+
+document.querySelectorAll(".account-title").forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    const item = button.closest(".account-item");
+    const content = item.querySelector(".account-content");
+    const icon = button.querySelector("em");
+
+    const isOpen = content.classList.contains("active");
+
+    /* 다른 계좌 닫기 */
+
+    document.querySelectorAll(".account-content").forEach((other) => {
+      other.classList.remove("active");
+    });
+
+    document.querySelectorAll(".account-title em").forEach((otherIcon) => {
+      otherIcon.textContent = "＋";
+    });
+
+
+    /* 선택한 계좌 열기 */
+
+    if (!isOpen) {
+
+      content.classList.add("active");
+
+      if (icon) {
+        icon.textContent = "−";
+      }
+
+    }
+
+  });
+
+});
+
+
+/* =========================================
    ACCOUNT COPY
-======================================== */
+========================================= */
 
-const copyButtons = document.querySelectorAll(".copy-button");
+document.querySelectorAll(".copy-account").forEach((button) => {
 
-copyButtons.forEach((button) => {
+  button.addEventListener("click", async (event) => {
 
-  button.addEventListener("click", async () => {
+    event.stopPropagation();
 
-    const accountContent = button.parentElement;
-    const accountText = accountContent.querySelector("p").innerText;
+    const account = button.dataset.account;
 
     try {
 
-      await navigator.clipboard.writeText(accountText);
+      await navigator.clipboard.writeText(account);
 
       const originalText = button.textContent;
 
-      button.textContent = "복사되었습니다 ♡";
+      button.textContent = "COPIED";
 
       setTimeout(() => {
         button.textContent = originalText;
@@ -55,7 +109,7 @@ copyButtons.forEach((button) => {
 
     } catch (error) {
 
-      alert("계좌번호를 복사하지 못했습니다.");
+      alert("계좌번호 복사에 실패했습니다.");
 
     }
 
@@ -64,31 +118,31 @@ copyButtons.forEach((button) => {
 });
 
 
-/* ========================================
-   INVITATION LINK COPY
-======================================== */
+/* =========================================
+   LINK COPY
+========================================= */
 
-const shareButton = document.querySelector(".share-button");
+const copyLink = document.getElementById("copyLink");
 
-if (shareButton) {
+if (copyLink) {
 
-  shareButton.addEventListener("click", async () => {
+  copyLink.addEventListener("click", async () => {
 
     try {
 
       await navigator.clipboard.writeText(window.location.href);
 
-      const originalText = shareButton.textContent;
+      const originalText = copyLink.innerHTML;
 
-      shareButton.textContent = "링크가 복사되었습니다 ♡";
+      copyLink.innerHTML = "<span>✓</span> COPIED";
 
       setTimeout(() => {
-        shareButton.textContent = originalText;
-      }, 1800);
+        copyLink.innerHTML = originalText;
+      }, 1500);
 
     } catch (error) {
 
-      alert("링크를 복사하지 못했습니다.");
+      alert("링크 복사에 실패했습니다.");
 
     }
 
@@ -97,12 +151,35 @@ if (shareButton) {
 }
 
 
-/* ========================================
-   SCROLL FADE ANIMATION
-======================================== */
+/* =========================================
+   KAKAO SHARE
+========================================= */
 
-const sections = document.querySelectorAll(
-  ".section, .main-photo, .ending"
+const kakaoShare = document.getElementById("kakaoShare");
+
+if (kakaoShare) {
+
+  kakaoShare.addEventListener("click", () => {
+
+    /*
+      카카오톡 공유 기능은
+      카카오 Developers 앱 키를 연결한 후
+      실제 공유 기능을 넣을 예정입니다.
+    */
+
+    alert("카카오톡 공유 기능은 실제 청첩장 완성 단계에서 연결할게요. 🤍");
+
+  });
+
+}
+
+
+/* =========================================
+   SCROLL ANIMATION
+========================================= */
+
+const animatedElements = document.querySelectorAll(
+  ".section, .hero-photo, .ending-photo"
 );
 
 const observer = new IntersectionObserver(
@@ -125,32 +202,27 @@ const observer = new IntersectionObserver(
 );
 
 
-sections.forEach((section) => {
-  observer.observe(section);
+animatedElements.forEach((element) => {
+
+  observer.observe(element);
+
 });
 
 
-/* ========================================
-   SMOOTH ANCHOR SCROLL
-======================================== */
+/* =========================================
+   HERO INITIAL ANIMATION
+========================================= */
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
+window.addEventListener("load", () => {
 
-  link.addEventListener("click", (event) => {
+  const heroPhoto = document.querySelector(".hero-photo");
 
-    const targetId = link.getAttribute("href");
+  if (heroPhoto) {
 
-    const target = document.querySelector(targetId);
+    setTimeout(() => {
+      heroPhoto.classList.add("visible");
+    }, 250);
 
-    if (!target) return;
-
-    event.preventDefault();
-
-    target.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-
-  });
+  }
 
 });
