@@ -1634,23 +1634,3 @@ body::before {
   letter-spacing: .12em;
   color: #6b645d;
 }
-.kakao-icon {
-  position: relative;
-  display: block;
-  width: 25px;
-  height: 19px;
-  border-radius: 50%;
-  background: #77736f;
-}
-
-.kakao-icon::after {
-  content: "";
-  position: absolute;
-  left: 2px;
-  bottom: -5px;
-  width: 8px;
-  height: 8px;
-  background: #77736f;
-  transform: rotate(20deg);
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-}
