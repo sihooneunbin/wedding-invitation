@@ -1455,4 +1455,5 @@ main,
 .account .section-label,
 .share .section-label {
   font-size: 16px;
+    font-weight: 500;
 }
