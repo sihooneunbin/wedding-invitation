@@ -345,13 +345,13 @@ padding-bottom: 100px;
 background: var(--paper);
 }
 
-.join-title {
-  font-family:"Cormorant Garamond",serif;
-  font-size:5px;
-  line-height:1.15;
+.join h2.join-title {
+  font-family:"Cormorant Garamond", serif !important;
+  font-size:10px !important;
+  line-height:1.15 !important;
   letter-spacing:.13em;
   text-align:center;
-  color:#4b4844;
+  color:#4b4844 !important;
 }
 /* =========================================
    INVITATION
