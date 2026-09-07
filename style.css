@@ -1347,7 +1347,7 @@ object-fit: cover;
 }
 
 .parent-line .deceased {
-  font-size: 9px;
+  font-size: 11px;
   color: #918981;
   text-align: left;
 }
@@ -1357,13 +1357,13 @@ object-fit: cover;
 }
 
 .parent-line strong {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   white-space: nowrap;
 }
 
 .parent-line small {
-  font-size: 9px;
+  font-size: 11px;
   color: #918981;
   white-space: nowrap;
   text-align: center;
