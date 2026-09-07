@@ -1356,13 +1356,13 @@ object-fit: cover;
 }
 
 .parent-line strong {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
 }
 
 .parent-line small {
-  font-size: 14px;
+  font-size: 13px;
   color: #918981;
   white-space: nowrap;
   text-align: center;
