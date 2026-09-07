@@ -1620,3 +1620,15 @@ body::before {
   opacity: 0.75;
   mix-blend-mode: multiply;
 }
+/* D-DAY */
+
+.dday {
+  margin-top: 65px;
+  text-align: center;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  color: #6b645d;
+}
