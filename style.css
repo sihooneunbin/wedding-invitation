@@ -1110,16 +1110,30 @@ main,
 }
 
 .parent-line {
-  display: flex;
+  display: grid;
+  grid-template-columns: 145px 55px 55px;
   justify-content: center;
   align-items: baseline;
-  gap: 7px;
-
-  white-space: nowrap;
 
   color: #4e4a45;
 }
 
+.parent-line strong {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.parent-line small {
+  font-size: 9px;
+  color: #918981;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.parent-line strong:last-child {
+  text-align: left;
+}
 .parent-line span {
   margin-right: 2px;
 
