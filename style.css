@@ -1111,11 +1111,21 @@ main,
 
 .parent-line {
   display: grid;
-  grid-template-columns: 145px 55px 55px;
+  grid-template-columns: 18px 125px 50px 55px;
   justify-content: center;
   align-items: baseline;
 
   color: #4e4a45;
+}
+
+.parent-line .deceased {
+  font-size: 9px;
+  color: #918981;
+  text-align: left;
+}
+
+.parent-line .deceased.empty {
+  visibility: hidden;
 }
 
 .parent-line strong {
@@ -1133,20 +1143,4 @@ main,
 
 .parent-line strong:last-child {
   text-align: left;
-}
-.parent-line span {
-  margin-right: 2px;
-
-  font-size: 10px;
-  color: #9c9186;
-}
-
-.parent-line strong {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.parent-line small {
-  font-size: 9px;
-  color: #918981;
 }
