@@ -1465,3 +1465,44 @@ object-fit: cover;
   font-size: 16px;
     font-weight: 500;
 }
+/* =========================================
+   COUPLE PHOTOS
+========================================= */
+
+.couple-photos {
+  width: 100%;
+  margin-top: 55px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.couple-photo {
+  text-align: left;
+}
+
+.couple-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1.28;
+
+  display: block;
+  object-fit: cover;
+
+  background: #e8e4de;
+}
+
+.couple-photo p {
+  margin-top: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #45413d;
+}
+
+.couple-photo p em {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f3b37;
+}
