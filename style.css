@@ -249,20 +249,18 @@ main,
 
 .hero-date {
   font-family: "Cormorant Garamond", serif;
-  font-size: 12px;
-  letter-spacing: .15em;
+  font-size: 18px;
+  letter-spacing: .12em;
 }
 
 .hero-place {
-  margin-top: 8px;
+  margin-top: 12px;
 
-  font-size: 10px;
+  font-size: 18px;
   line-height: 1.8;
-  letter-spacing: .05em;
+  letter-spacing: .01em;
   color: var(--sub);
 }
-
-
 /* =========================================
    COMMON SECTION
 ========================================= */
