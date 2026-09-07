@@ -1,3 +1,9 @@
+history.scrollRestoration = "manual";
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
 /* =========================================
    WEDDING INVITATION
    SIHOON & EUNBIN
@@ -213,8 +219,3 @@ if (storyGallery) {
   });
 
 }
-history.scrollRestoration = "manual";
-
-window.addEventListener("load", () => {
-  window.scrollTo(0, 0);
-});
