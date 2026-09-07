@@ -930,20 +930,43 @@ main,
 }
 
 .account-title em {
+  width: 10px;
+  height: 10px;
+
   margin-right: 4px;
 
-  font-family: sans-serif;
-  font-size: 17px;
+  position: relative;
+
+  font-size: 0;
   font-style: normal;
-  font-weight: 300;
-  line-height: 1;
 
-  color: #6f6962;
+  color: transparent;
 
-  transform: translateY(-2px);
+  transform: rotate(45deg);
+  transition: transform 0.25s ease;
+}
+
+.account-title em::before {
+  content: "";
+
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border-right: 1px solid #6f6962;
+  border-bottom: 1px solid #6f6962;
+
+  top: 0;
+  left: 0;
 }
 
 
+/* 열렸을 때 */
+
+.account-title.active em {
+  transform: rotate(225deg);
+}
 /* -----------------------------------------
    ACCOUNT CONTENT
 ----------------------------------------- */
