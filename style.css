@@ -869,19 +869,27 @@ main,
 ========================================= */
 
 .account {
+  padding-top: 80px;
+  padding-bottom: 90px;
   background: var(--paper);
 }
 
-.account-description {
-  margin-top: 18px;
 
-  font-size: 11px;
-  line-height: 2;
-  color: var(--sub);
+/* -----------------------------------------
+   ACCOUNT TITLE
+----------------------------------------- */
+
+.account .section-label {
+  margin-bottom: 38px;
 }
 
+
+/* -----------------------------------------
+   ACCOUNT LIST
+----------------------------------------- */
+
 .account-list {
-  margin-top: 40px;
+  margin-top: 0;
   text-align: left;
 }
 
@@ -893,44 +901,57 @@ main,
   border-bottom: 1px solid var(--line);
 }
 
+
+/* -----------------------------------------
+   ACCORDION BUTTON
+----------------------------------------- */
+
 .account-title {
   width: 100%;
-  padding: 21px 5px;
+  height: 52px;
+
+  padding: 0;
 
   border: 0;
   background: transparent;
 
-  display: grid;
-  grid-template-columns: 65px 1fr 25px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 
   text-align: left;
 }
 
 .account-title span {
-  font-size: 10px;
-  color: var(--sub);
-}
-
-.account-title strong {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 14px;
+  font-family: "Noto Serif KR", serif;
+  font-size: 12px;
   font-weight: 400;
-  letter-spacing: .08em;
+  color: #45413d;
 }
 
 .account-title em {
-  font-family: serif;
+  margin-right: 4px;
+
+  font-family: sans-serif;
   font-size: 17px;
   font-style: normal;
-  text-align: right;
-  color: var(--accent);
+  font-weight: 300;
+  line-height: 1;
+
+  color: #6f6962;
+
+  transform: translateY(-2px);
 }
+
+
+/* -----------------------------------------
+   ACCOUNT CONTENT
+----------------------------------------- */
 
 .account-content {
   display: none;
 
-  padding: 5px 5px 25px;
+  padding: 5px 0 25px;
 }
 
 .account-content.active {
@@ -938,7 +959,7 @@ main,
 }
 
 .account-person {
-  padding: 14px 0;
+  padding: 12px 0;
 
   display: flex;
   gap: 15px;
@@ -985,8 +1006,6 @@ main,
   letter-spacing: .08em;
   color: #716960;
 }
-
-
 /* =========================================
    MESSAGE
 ========================================= */
