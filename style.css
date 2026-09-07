@@ -1046,3 +1046,93 @@ main,
   }
 
 }
+/* =========================================
+   INVITATION - TEXT ONLY
+========================================= */
+
+.invitation {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+.invitation .section-label {
+  margin-bottom: 65px;
+}
+
+
+/* 인용문 */
+
+.invitation-quote {
+  color: #55514c;
+}
+
+.invitation-quote p {
+  font-size: 12px;
+  line-height: 2.45;
+  letter-spacing: -0.02em;
+}
+
+.invitation-quote span {
+  display: block;
+
+  margin-top: 28px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #77716a;
+}
+
+
+/* 초대 문구 */
+
+.invitation-message {
+  margin-top: 62px;
+}
+
+.invitation-message p {
+  font-size: 12px;
+  line-height: 2.45;
+  letter-spacing: -0.025em;
+  color: #55514c;
+}
+
+
+/* 혼주 */
+
+.parents {
+  margin-top: 95px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.parent-line {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 7px;
+
+  white-space: nowrap;
+
+  color: #4e4a45;
+}
+
+.parent-line span {
+  margin-right: 2px;
+
+  font-size: 10px;
+  color: #9c9186;
+}
+
+.parent-line strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.parent-line small {
+  font-size: 9px;
+  color: #918981;
+}
