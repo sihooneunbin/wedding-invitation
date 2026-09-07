@@ -1349,6 +1349,7 @@ main,
 
 .parent-line strong:last-child {
   text-align: left;
+  font-weight: 600;
 }
 /* =========================================
    INFORMATION
