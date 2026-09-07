@@ -425,28 +425,40 @@ main,
 ========================================= */
 
 .calendar-section {
-  padding-top: 105px;
-  padding-bottom: 105px;
+  padding: 105px 35px 100px;
   text-align: center;
+  background: #faf9f6;
 }
 
 .calendar-section .section-label {
-  margin-bottom: 32px;
+  margin-bottom: 43px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  color: #a49a90;
 }
 
 .calendar-section h2 {
-  margin-bottom: 48px;
+  margin-bottom: 61px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 400;
-  letter-spacing: 0.13em;
-  color: #625d57;
+  line-height: 1;
+  letter-spacing: 0.20em;
+  color: #57514b;
 }
+
+
+/* -----------------------------------------
+   CALENDAR GRID
+----------------------------------------- */
 
 .calendar {
   width: 100%;
-  max-width: 350px;
+  max-width: 430px;
   margin: 0 auto;
 }
 
@@ -457,78 +469,101 @@ main,
 }
 
 .calendar-week {
-  margin-bottom: 22px;
+  margin-bottom: 31px;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 9px;
-  letter-spacing: 0.08em;
-  color: #aaa39b;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #a59b91;
 }
 
 .calendar-days {
-  row-gap: 19px;
+  row-gap: 28px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 13px;
-  color: #716b65;
+  font-size: 11px;
+  font-weight: 400;
+  color: #746d66;
 }
 
 .calendar-days span {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 
   margin: 0 auto;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  line-height: 1;
 }
+
+
+/* -----------------------------------------
+   WEDDING DATE - 12
+----------------------------------------- */
 
 .calendar-days .wedding-day-number {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 
-  border: 1px solid #9d9184;
+  margin-top: -4px;
+
+  border: 1px solid #a69a8d;
   border-radius: 50%;
 
-  color: #625951;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #716960;
 }
 
+
+/* -----------------------------------------
+   BOTTOM DATE
+----------------------------------------- */
+
 .calendar-bottom {
-  margin-top: 48px;
+  margin-top: 70px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  gap: 18px;
+  gap: 21px;
 }
 
 .calendar-bottom strong {
   font-family: "Cormorant Garamond", serif;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 300;
   line-height: 1;
 
-  color: #665e57;
+  color: #6b645d;
 }
 
 .calendar-bottom div {
-  padding-left: 18px;
+  min-height: 46px;
 
-  border-left: 1px solid #d5d0c9;
+  padding-left: 22px;
+
+  border-left: 1px solid #d4cec7;
 
   display: flex;
   flex-direction: column;
-
-  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 11px;
-  line-height: 1.8;
-  letter-spacing: 0.12em;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.16em;
 
-  color: #817970;
+  color: #938980;
 }
 /* =========================================
    OUR STORY
