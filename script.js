@@ -127,7 +127,7 @@ if (kakaoShare) {
     Kakao.Share.sendDefault({
       objectType: "text",
 
-      text: "시훈 & 은빈의 결혼식에 초대합니다. 🤍",
+      text: "시훈🤍은빈, 결혼합니다.",
 
       link: {
         mobileWebUrl: window.location.href,
