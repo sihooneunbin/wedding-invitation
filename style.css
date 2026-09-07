@@ -1599,3 +1599,28 @@ object-fit: cover;
   letter-spacing: .15em;
   color: #fff;
 }
+/* =========================================
+   BACKGROUND COLOR
+========================================= */
+
+body,
+main,
+.header,
+.hero,
+.join,
+.invitation,
+.calendar-section,
+.story,
+.venue,
+.transport,
+.account,
+.message,
+.share,
+.ending {
+  background: #f0eee8;
+}
+
+:root {
+  --bg: #f0eee8;
+  --paper: #f0eee8;
+}
