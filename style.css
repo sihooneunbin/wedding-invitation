@@ -425,7 +425,7 @@ main,
 ========================================= */
 
 .calendar-section {
-  padding: 105px 35px 100px;
+  padding: 80px 35px 85px;
   text-align: center;
   background: #faf9f6;
 }
@@ -441,7 +441,7 @@ main,
 }
 
 .calendar-section h2 {
-  margin-bottom: 61px;
+  margin-bottom: 53px;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 28px;
@@ -479,10 +479,10 @@ main,
 }
 
 .calendar-days {
-  row-gap: 28px;
+  row-gap: 26px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 400;
   color: #746d66;
 }
@@ -527,7 +527,7 @@ main,
 ----------------------------------------- */
 
 .calendar-bottom {
-  margin-top: 70px;
+  margin-top: 60px;
 
   display: flex;
   justify-content: center;
