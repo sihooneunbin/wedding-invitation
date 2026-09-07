@@ -671,7 +671,7 @@ object-fit: cover;
 
 .story-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3px;
 }
 
@@ -682,12 +682,12 @@ object-fit: cover;
 }
 
 .story-item.story-wide {
-  grid-column: span 2;
-  aspect-ratio: 2 / 1.15;
+  grid-column: span 1;
+  aspect-ratio: 1 / 1;
 }
 
 .story-item.story-tall {
-  aspect-ratio: 1 / 1.35;
+  aspect-ratio: 1 / 1;
 }
 
 .story-item img {
