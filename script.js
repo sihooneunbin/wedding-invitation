@@ -82,8 +82,10 @@ document.querySelectorAll(".copy-account").forEach((button) => {
 });
 
 
-/* =========================================
+/* =================================
    LINK COPY
+================================= */
+
 const copyLink = document.getElementById("copyLink");
 
 if (copyLink) {
@@ -97,15 +99,12 @@ if (copyLink) {
       const circle = copyLink.querySelector(".share-circle");
       const label = copyLink.querySelector("span:last-child");
 
-      const originalCircle = circle.textContent;
-      const originalLabel = label.textContent;
-
       circle.textContent = "✓";
       label.textContent = "COPIED";
 
       setTimeout(() => {
-        circle.textContent = originalCircle;
-        label.textContent = originalLabel;
+        circle.textContent = "↗";
+        label.textContent = "LINK";
       }, 1500);
 
     } catch (error) {
