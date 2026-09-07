@@ -1429,8 +1429,8 @@ object-fit: cover;
 /* 날짜 / 주소 */
 .info-detail {
   margin-top: 34px;
+  margin-bottom: 30px;
 }
-
 
 /* 날짜와 주소 */
 .info-detail p {
