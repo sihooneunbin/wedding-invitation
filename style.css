@@ -1522,7 +1522,13 @@ object-fit: cover;
 
 .gallery-modal {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 520px;
+  height: 100vh;
+  transform: translateX(-50%);
+
   z-index: 999;
 
   display: none;
