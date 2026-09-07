@@ -251,3 +251,126 @@ function KakaoMapInit() {
     }
   );
 }
+/* =========================================
+   GALLERY MODAL
+========================================= */
+
+const galleryModal = document.getElementById("galleryModal");
+const galleryModalImage = document.getElementById("galleryModalImage");
+const galleryClose = document.getElementById("galleryClose");
+const galleryPrev = document.getElementById("galleryPrev");
+const galleryNext = document.getElementById("galleryNext");
+const galleryCount = document.getElementById("galleryCount");
+
+let galleryImages = [];
+let currentGalleryIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+
+/* 갤러리 사진 불러오기 */
+function setupGalleryModal() {
+  galleryImages = Array.from(
+    document.querySelectorAll(".story-gallery img")
+  );
+
+  galleryImages.forEach((img, index) => {
+    img.style.cursor = "pointer";
+
+    img.addEventListener("click", () => {
+      currentGalleryIndex = index;
+      openGallery();
+    });
+  });
+}
+
+/* 갤러리 열기 */
+function openGallery() {
+  if (!galleryImages.length) return;
+
+  galleryModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+
+  showGalleryImage();
+}
+
+/* 갤러리 닫기 */
+function closeGallery() {
+  galleryModal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+/* 사진 보여주기 */
+function showGalleryImage() {
+  const img = galleryImages[currentGalleryIndex];
+
+  galleryModalImage.src = img.src;
+  galleryModalImage.alt = img.alt || "";
+
+  galleryCount.textContent =
+    `${currentGalleryIndex + 1} / ${galleryImages.length}`;
+}
+
+/* 이전 사진 */
+function showPreviousImage() {
+  currentGalleryIndex--;
+
+  if (currentGalleryIndex < 0) {
+    currentGalleryIndex = galleryImages.length - 1;
+  }
+
+  showGalleryImage();
+}
+
+/* 다음 사진 */
+function showNextImage() {
+  currentGalleryIndex++;
+
+  if (currentGalleryIndex >= galleryImages.length) {
+    currentGalleryIndex = 0;
+  }
+
+  showGalleryImage();
+}
+
+/* 버튼 */
+galleryClose.addEventListener("click", closeGallery);
+galleryPrev.addEventListener("click", showPreviousImage);
+galleryNext.addEventListener("click", showNextImage);
+
+/* 배경 클릭하면 닫기 */
+galleryModal.addEventListener("click", (e) => {
+  if (e.target === galleryModal) {
+    closeGallery();
+  }
+});
+
+/* 키보드 */
+document.addEventListener("keydown", (e) => {
+  if (!galleryModal.classList.contains("active")) return;
+
+  if (e.key === "Escape") closeGallery();
+  if (e.key === "ArrowLeft") showPreviousImage();
+  if (e.key === "ArrowRight") showNextImage();
+});
+
+/* 모바일 좌우 스와이프 */
+galleryModal.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+galleryModal.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+
+  const distance = touchEndX - touchStartX;
+
+  if (Math.abs(distance) < 50) return;
+
+  if (distance < 0) {
+    showNextImage();
+  } else {
+    showPreviousImage();
+  }
+});
+
+/* 실행 */
+setupGalleryModal();
