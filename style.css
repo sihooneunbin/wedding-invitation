@@ -422,7 +422,7 @@ main,
 ========================================= */
 
 .calendar-section {
-  padding: 80px 35px 85px;
+padding: 60px 35px 65px;
   text-align: center;
   background: #faf9f6;
 }
@@ -438,13 +438,12 @@ main,
 }
 
 .calendar-section h2 {
-  margin-bottom: 53px;
-
+  margin-bottom: 40px;
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.20em;
+  letter-spacing: .20em;
   color: #57514b;
 }
 
@@ -469,14 +468,14 @@ main,
   margin-bottom: 31px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #a59b91;
 }
 
 .calendar-days {
-  row-gap: 26px;
+  row-gap: 22px;
 
   font-family: "Cormorant Garamond", serif;
   font-size: 14px;
@@ -505,19 +504,16 @@ main,
 .calendar-days .wedding-day-number {
   width: 36px;
   height: 36px;
-
   margin-top: -4px;
-
-  border: 1px solid #a69a8d;
   border-radius: 50%;
-
+  background: #a69a8d;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: #716960;
+  color: #ffffff;
+  font-size: 15px;
+  position: relative;
 }
-
 
 /* -----------------------------------------
    BOTTOM DATE
