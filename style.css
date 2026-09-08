@@ -1669,3 +1669,57 @@ body::before {
   background: #77736f;
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+/* ===== Couple & Parents Slide Fade ===== */
+
+/* 신랑·신부 사진 */
+.couple-photo {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* 왼쪽 사진 */
+.couple-photo:nth-child(1) {
+  transform: translateX(-35px);
+}
+
+/* 오른쪽 사진 */
+.couple-photo:nth-child(2) {
+  transform: translateX(35px);
+}
+
+/* 사진 등장 */
+.couple-photo.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* 혼주 정보 */
+.parent-line {
+  overflow: hidden;
+}
+
+/* 혼주 왼쪽 정보 */
+.parent-line > .deceased,
+.parent-line > strong:not(:last-child),
+.parent-line > small {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* 신랑·신부 이름 오른쪽 */
+.parent-line > strong:last-child {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* 등장 */
+.parent-line.visible > .deceased,
+.parent-line.visible > strong:not(:last-child),
+.parent-line.visible > small,
+.parent-line.visible > strong:last-child {
+  opacity: 1;
+  transform: translateX(0);
+}
