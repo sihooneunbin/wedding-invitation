@@ -242,6 +242,7 @@ main,
   font-size: 35px;
   line-height: 1.05;
   letter-spacing: .08em;
+  font-style:italic;
 }
 
 .hero h1 span {
