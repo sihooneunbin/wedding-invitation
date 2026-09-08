@@ -226,6 +226,8 @@ function KakaoMapInit() {
 
   if (!container) return;
 
+  if (typeof kakao === "undefined" || !kakao.maps) return;
+
   const mapOption = {
     center: new kakao.maps.LatLng(35.1699, 129.1327),
     level: 3
