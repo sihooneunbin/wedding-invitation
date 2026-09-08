@@ -144,7 +144,7 @@ if (kakaoShare) {
 ========================================= */
 
 const animatedElements = document.querySelectorAll(
-  ".section, .hero-photo, .ending-photo"
+  "main section, main section > *, main section article, main section img"
 );
 
 const observer = new IntersectionObserver(
@@ -155,6 +155,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
 
         entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
 
       }
 
@@ -162,18 +163,16 @@ const observer = new IntersectionObserver(
 
   },
   {
-    threshold: 0.12
+    threshold: 0.08
   }
 );
 
-
 animatedElements.forEach((element) => {
 
+  element.classList.add("scroll-fade");
   observer.observe(element);
 
 });
-
-
 /* =========================================
    HERO INITIAL ANIMATION
 ========================================= */
@@ -390,4 +389,16 @@ const dday = document.getElementById("ddayNumber");
 
 if (dday) {
   dday.textContent = days > 0 ? `D-${days} ෆ` : "D-DAY ෆ";
+}
+/* ===== Scroll Fade ===== */
+
+.scroll-fade {
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+
+.scroll-fade.visible {
+  opacity:1;
+  transform:translateY(0);
 }
