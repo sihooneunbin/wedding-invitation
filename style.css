@@ -717,6 +717,7 @@ padding: 60px 35px 65px;
 .venue h2 {
   font-family: "Pretendard", sans-serif;
   font-size: 20px;
+    font-weight: 600;
 }
 
 .venue-korean {
