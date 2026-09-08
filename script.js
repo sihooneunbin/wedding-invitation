@@ -390,15 +390,4 @@ const dday = document.getElementById("ddayNumber");
 if (dday) {
   dday.textContent = days > 0 ? `D-${days} ෆ` : "D-DAY ෆ";
 }
-/* ===== Scroll Fade ===== */
 
-.scroll-fade {
-  opacity:0;
-  transform:translateY(25px);
-  transition:opacity .8s ease, transform .8s ease;
-}
-
-.scroll-fade.visible {
-  opacity:1;
-  transform:translateY(0);
-}
