@@ -1726,3 +1726,25 @@ body::before {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.music-button {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d8d5cf;
+  border-radius: 50%;
+  background: rgba(250, 249, 246, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.play-icon {
+  font-size: 14px;
+  color: #77736f;
+  margin-left: 2px;
+}
