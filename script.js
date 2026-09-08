@@ -335,17 +335,26 @@ function showNextImage() {
 }
 
 /* 버튼 */
-galleryClose.addEventListener("click", closeGallery);
-galleryPrev.addEventListener("click", showPreviousImage);
-galleryNext.addEventListener("click", showNextImage);
+if (galleryClose) {
+  galleryClose.addEventListener("click", closeGallery);
+}
+
+if (galleryPrev) {
+  galleryPrev.addEventListener("click", showPreviousImage);
+}
+
+if (galleryNext) {
+  galleryNext.addEventListener("click", showNextImage);
+}
 
 /* 배경 클릭하면 닫기 */
-galleryModal.addEventListener("click", (e) => {
-  if (e.target === galleryModal) {
-    closeGallery();
-  }
-});
-
+if (galleryModal) {
+  galleryModal.addEventListener("click", (e) => {
+    if (e.target === galleryModal) {
+      closeGallery();
+    }
+  });
+}
 /* 키보드 */
 document.addEventListener("keydown", (e) => {
   if (!galleryModal.classList.contains("active")) return;
