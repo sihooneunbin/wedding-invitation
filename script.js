@@ -1,4 +1,6 @@
-Kakao.init("9b53925c5ae6be1717a4d4470199a081");
+if (typeof Kakao !== "undefined") {
+  Kakao.init("9b53925c5ae6be1717a4d4470199a081");
+}
 history.scrollRestoration = "manual";
 
 window.addEventListener("load", () => {
