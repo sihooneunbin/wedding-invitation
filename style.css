@@ -1669,3 +1669,10 @@ body::before {
   background: #77736f;
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+/* 임시 애니메이션 복구 */
+.section,
+.hero-photo,
+.ending-photo {
+  opacity: 1;
+  transform: translateY(0);
+}
