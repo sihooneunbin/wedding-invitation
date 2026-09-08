@@ -1669,3 +1669,15 @@ body::before {
   background: #77736f;
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+/* ===== INDIVIDUAL SCROLL ANIMATION ===== */
+
+.scroll-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.scroll-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
