@@ -253,9 +253,12 @@ main,
   text-align:left;
 }
 .hero-line {
-  display:none;
+  display:block;
+  width:0;
+  height:1px;
+  margin:35px 0;
+  background:transparent;
 }
-
 .hero-date,
 .hero-place {
   font-family: "Pretendard", sans-serif;
