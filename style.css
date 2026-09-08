@@ -253,10 +253,7 @@ main,
   text-align:left;
 }
 .hero-line {
-  width:28px;
-  height:1px;
-  margin:25px 0;
-  background:#bbb4ac;
+  display:none;
 }
 
 .hero-date,
