@@ -146,9 +146,8 @@ if (kakaoShare) {
 ========================================= */
 
 const animatedElements = document.querySelectorAll(
-  ".section, .hero-photo, .ending-photo"
+  ".section, .hero-photo, .ending-photo, .couple-photo, .parent-line"
 );
-
 const observer = new IntersectionObserver(
   (entries) => {
 
