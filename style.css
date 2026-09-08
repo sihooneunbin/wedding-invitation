@@ -1325,9 +1325,11 @@ main,
 
 .parent-line {
   display: grid;
-  grid-template-columns: 13px 105px 45px 55px;
+  grid-template-columns: 13px auto auto auto;
+  column-gap: 12px;
   justify-content: center;
   align-items: baseline;
+}
 
   color: #4e4a45;
 }
