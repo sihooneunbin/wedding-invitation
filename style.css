@@ -1717,3 +1717,12 @@ body::before {
   height: 24px;
   display: block;
 }
+.link-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #76736f;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
