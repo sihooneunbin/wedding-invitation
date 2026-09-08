@@ -1721,3 +1721,12 @@ body::before {
   opacity: 1;
   transform: translateX(0);
 }
+.account-message {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6f6962;
+}
