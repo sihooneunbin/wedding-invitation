@@ -400,12 +400,3 @@ if (dday) {
   opacity:1;
   transform:translateY(0);
 }
-window.addEventListener("load", () => {
-  document.querySelectorAll(".section").forEach((element) => {
-    element.classList.add("visible");
-  });
-
-  document.querySelectorAll(".hero-photo, .ending-photo").forEach((element) => {
-    element.classList.add("visible");
-  });
-});
