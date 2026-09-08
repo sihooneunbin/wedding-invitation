@@ -1629,15 +1629,26 @@ body::before {
 }
 /* D-DAY */
 
-.dday {
-  margin-top: 30px;
-  text-align: center;
+.dday-wrap {
+  margin-top:40px;
+  text-align:center;
+}
 
-  font-family: "Cormorant Garamond", serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: .12em;
-  color: #6b645d;
+.dday {
+  font-family:"Cormorant Garamond",serif;
+  font-size:30px;
+  font-weight:500;
+  letter-spacing:.12em;
+  color:#6b645d;
+}
+
+.dday-sub {
+  margin-top:7px;
+  font-family:"Cormorant Garamond",serif;
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:.08em;
+  color:#8b847c;
 }
 .kakao-bubble {
   position: relative;
