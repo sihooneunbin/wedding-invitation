@@ -1723,3 +1723,10 @@ body::before {
   opacity: 1;
   transform: translateX(0);
 }
+.wedding-day-number small {
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+  font-size: 7px;
+  color: #ffffff;
+}
