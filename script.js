@@ -144,7 +144,7 @@ if (kakaoShare) {
 ========================================= */
 
 const animatedElements = document.querySelectorAll(
-  "main section, main section > *, main section article, main section img"
+  ".section, .hero-photo, .ending-photo"
 );
 
 const observer = new IntersectionObserver(
@@ -155,7 +155,6 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
 
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
 
       }
 
@@ -163,13 +162,12 @@ const observer = new IntersectionObserver(
 
   },
   {
-    threshold: 0.08
+    threshold: 0.12
   }
 );
 
 animatedElements.forEach((element) => {
 
-  element.classList.add("scroll-fade");
   observer.observe(element);
 
 });
