@@ -400,3 +400,38 @@ if (dday) {
   opacity:1;
   transform:translateY(0);
 }
+/* =========================================
+   INDIVIDUAL ELEMENT SCROLL ANIMATION
+========================================= */
+
+const scrollItems = document.querySelectorAll(
+  ".section-label, .join-title, " +
+  ".invitation-quote, .invitation-message, .couple-photos, .parents, " +
+  ".calendar-section h2, .calendar, .dday-wrap, " +
+  ".story-gallery, " +
+  ".venue h2, .venue-info, .map, .map-links, " +
+  ".transport h2, .transport-list, " +
+  ".account-list, " +
+  ".info-block, " +
+  ".share-line, .share-text, .share-buttons, " +
+  ".ending-text"
+);
+
+const scrollItemObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        scrollItemObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.08
+  }
+);
+
+scrollItems.forEach((item) => {
+  item.classList.add("scroll-item");
+  scrollItemObserver.observe(item);
+});
