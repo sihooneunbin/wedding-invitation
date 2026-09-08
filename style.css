@@ -1381,7 +1381,7 @@ main,
 
 /* 각각의 안내 묶음 */
 .info-block {
-  color: #55514c;
+  color:#6f6962;
 }
 
 
@@ -1425,7 +1425,7 @@ main,
 /* 날짜와 주소 */
 .info-detail p {
   line-height: 2.2;
-  color: #77716a;
+color:#6f6962;
 }
 
 
