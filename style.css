@@ -1404,9 +1404,9 @@ main,
 
 /* 기본 본문 */
 .info-block p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 2.35;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 
@@ -1424,8 +1424,9 @@ main,
 
 /* 날짜와 주소 */
 .info-detail p {
-  line-height: 2.2;
-color:#6f6962;
+  font-size:14px;
+  line-height:2.2;
+  color:#6f6962;
 }
 
 
