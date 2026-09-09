@@ -1724,28 +1724,18 @@ body::before {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.music-button {
-  position: fixed;
-  right: 18px;
-   bottom: 25px;
-  transform: none;
-  width: 44px;
-  height: 44px;
-  border: 1px solid #d8d5cf;
-  border-radius: 50%;
-  background: rgba(250, 249, 246, 0.75);
+.music-icon {
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
-  box-sizing: border-box;
 }
 
-.play-icon {
-  font-size: 14px;
-  color: #77736f;
-  margin-left: 0;
-  transform: translateX(2px);
+.music-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: #77736f;
 }
 .more-icon svg {
   width: 22px;
