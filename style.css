@@ -1817,3 +1817,6 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
+img {
+  -webkit-touch-callout: none;
+}
