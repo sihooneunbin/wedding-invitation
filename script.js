@@ -439,12 +439,6 @@ const weddingMusic = document.getElementById("weddingMusic");
 
 const musicChannel = new BroadcastChannel("wedding-music-channel");
 
-function stopMusic() {
-  if (weddingMusic && !weddingMusic.paused) {
-    weddingMusic.pause();
-  }
-}
-
 // 버튼 아이콘 변경
 function updateMusicIcon() {
   const icon = musicButton?.querySelector(".music-icon");
@@ -469,44 +463,65 @@ function updateMusicIcon() {
   }
 }
 
-// 다른 재생 컨텍스트의 음악 정지
+// 다른 재생 컨텍스트에서 음악을 시작하면
+// 현재 음악을 정지
 musicChannel.addEventListener("message", (event) => {
+
   if (event.data === "stop-other-music") {
-    stopMusic();
+    weddingMusic.pause();
     updateMusicIcon();
   }
+
+  if (event.data === "music-playing") {
+    updateMusicIcon();
+  }
+
 });
 
 // 음악 재생
 function playWeddingMusic() {
+
+  // 다른 재생 컨텍스트에 정지 신호
   musicChannel.postMessage("stop-other-music");
 
-  weddingMusic.play().catch(() => {});
+  weddingMusic.play()
+    .then(() => {
+      musicChannel.postMessage("music-playing");
+      updateMusicIcon();
+    })
+    .catch(() => {
+      updateMusicIcon();
+    });
+
 }
 
-// 음악 상태가 바뀌면 아이콘도 변경
+// 음악 상태가 실제로 바뀌면 아이콘도 변경
 weddingMusic.addEventListener("play", updateMusicIcon);
 weddingMusic.addEventListener("pause", updateMusicIcon);
 
 // 페이지가 열리면 자동재생
 window.addEventListener("load", () => {
+
   setTimeout(() => {
     playWeddingMusic();
   }, 100);
+
 });
 
 // 음악 버튼
 if (musicButton && weddingMusic) {
+
   musicButton.addEventListener("click", () => {
 
     if (weddingMusic.paused) {
       playWeddingMusic();
     } else {
       weddingMusic.pause();
+      updateMusicIcon();
     }
 
-    updateMusicIcon();
   });
+
 }
 
 // 처음 아이콘 설정
