@@ -439,41 +439,65 @@ const weddingMusic = document.getElementById("weddingMusic");
 
 const musicChannel = new BroadcastChannel("wedding-music-channel");
 
-const musicId =
-  Date.now().toString() + Math.random().toString(36).slice(2);
-
 function stopMusic() {
   if (weddingMusic && !weddingMusic.paused) {
     weddingMusic.pause();
   }
 }
 
-// 다른 페이지에서 음악을 시작하면 현재 페이지 음악 정지
+// 버튼 아이콘 변경
+function updateMusicIcon() {
+  const icon = musicButton?.querySelector(".music-icon");
+
+  if (!icon) return;
+
+  if (weddingMusic.paused) {
+    // 일시정지 상태 → PAUSE 아이콘
+    icon.innerHTML = `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 5H10V19H7V5Z"></path>
+        <path d="M14 5H17V19H14V5Z"></path>
+      </svg>
+    `;
+  } else {
+    // 재생 상태 → PLAY 아이콘
+    icon.innerHTML = `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 5.5L19 12L8 18.5V5.5Z"></path>
+      </svg>
+    `;
+  }
+}
+
+// 다른 재생 컨텍스트의 음악 정지
 musicChannel.addEventListener("message", (event) => {
   if (event.data === "stop-other-music") {
     stopMusic();
+    updateMusicIcon();
   }
 });
 
-// 내가 음악을 시작하기 전에 다른 페이지의 음악 정지
+// 음악 재생
 function playWeddingMusic() {
   musicChannel.postMessage("stop-other-music");
 
   weddingMusic.play().catch(() => {});
 }
 
-// 페이지가 열리면 자동재생 시도
-if (weddingMusic) {
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      playWeddingMusic();
-    }, 100);
-  });
-}
+// 음악 상태가 바뀌면 아이콘도 변경
+weddingMusic.addEventListener("play", updateMusicIcon);
+weddingMusic.addEventListener("pause", updateMusicIcon);
+
+// 페이지가 열리면 자동재생
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    playWeddingMusic();
+  }, 100);
+});
 
 // 음악 버튼
 if (musicButton && weddingMusic) {
-  musicButton.addEventListener("click", async () => {
+  musicButton.addEventListener("click", () => {
 
     if (weddingMusic.paused) {
       playWeddingMusic();
@@ -481,5 +505,9 @@ if (musicButton && weddingMusic) {
       weddingMusic.pause();
     }
 
+    updateMusicIcon();
   });
 }
+
+// 처음 아이콘 설정
+updateMusicIcon();
