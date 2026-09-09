@@ -438,11 +438,19 @@ const musicButton = document.getElementById("musicButton");
 const weddingMusic = document.getElementById("weddingMusic");
 
 if (musicButton && weddingMusic) {
+
   musicButton.addEventListener("click", async () => {
+
     if (weddingMusic.paused) {
-      await weddingMusic.play();
+      try {
+        await weddingMusic.play();
+      } catch (error) {
+        console.log("음악 재생 실패:", error);
+      }
     } else {
       weddingMusic.pause();
     }
+
   });
+
 }
