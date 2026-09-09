@@ -521,3 +521,21 @@ if (musicButton && weddingMusic) {
 
 // 처음 아이콘 설정
 updateMusicIcon();
+// 사진 저장 및 복사 방지
+document.addEventListener("contextmenu", (e) => {
+  if (e.target.closest("img")) {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener("dragstart", (e) => {
+  if (e.target.closest("img")) {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener("copy", (e) => {
+  if (window.getSelection()?.toString()) {
+    e.preventDefault();
+  }
+});
