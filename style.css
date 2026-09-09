@@ -1744,7 +1744,7 @@ body::before {
 .play-icon {
   font-size: 14px;
   color: #77736f;
-  margin-left: 2px;
+  margin-left: 4px;
 }
 .more-icon svg {
   width: 22px;
