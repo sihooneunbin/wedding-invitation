@@ -438,11 +438,20 @@ const musicButton = document.getElementById("musicButton");
 
 const weddingMusic = new Audio("the_mountain-dream-dream-music-587581.mp3");
 weddingMusic.loop = true;
+weddingMusic.preload = "auto";
 
+// 페이지가 열리면 자동재생 시도
+window.addEventListener("load", () => {
+  weddingMusic.play().catch(() => {
+    // 모바일 브라우저가 자동재생을 막으면 조용히 대기
+  });
+});
+
+// 음악 버튼
 if (musicButton) {
-  musicButton.addEventListener("click", () => {
+  musicButton.addEventListener("click", async () => {
     if (weddingMusic.paused) {
-      weddingMusic.play();
+      await weddingMusic.play();
     } else {
       weddingMusic.pause();
     }
