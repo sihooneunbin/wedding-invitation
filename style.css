@@ -1723,6 +1723,26 @@ body::before {
   stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
+.music-button {
+  position: fixed !important;
+  right: 18px !important;
+  left: auto !important;
+  bottom: 25px !important;
+  top: auto !important;
+
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid #d8d5cf;
+  border-radius: 50%;
+  background: rgba(250, 249, 246, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+  box-sizing: border-box;
 }
 .music-icon {
   width: 24px;
