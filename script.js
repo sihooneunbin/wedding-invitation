@@ -430,3 +430,21 @@ if (dday) {
   dday.textContent = days > 0 ? `D-${days} ෆ` : "D-DAY ෆ";
 }
 
+// =========================================
+// MUSIC PLAYER
+// =========================================
+
+const musicButton = document.getElementById("musicButton");
+
+const weddingMusic = new Audio("the_mountain-dream-dream-music-587581.mp3");
+weddingMusic.loop = true;
+
+if (musicButton) {
+  musicButton.addEventListener("click", () => {
+    if (weddingMusic.paused) {
+      weddingMusic.play();
+    } else {
+      weddingMusic.pause();
+    }
+  });
+}
