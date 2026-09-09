@@ -1755,3 +1755,49 @@ body::before {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+/* OUR STORY 사진 순차 애니메이션 */
+
+.story-gallery .story-item {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.story.section.visible .story-item {
+  animation: storyPhotoUp 0.8s ease forwards;
+}
+
+.story.section.visible .story-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.story.section.visible .story-item:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.story.section.visible .story-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.story.section.visible .story-item:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.story.section.visible .story-item:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.story.section.visible .story-item:nth-child(6) {
+  animation-delay: 0.75s;
+}
+
+@keyframes storyPhotoUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
