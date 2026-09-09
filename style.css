@@ -1746,3 +1746,12 @@ body::before {
   color: #77736f;
   margin-left: 2px;
 }
+.more-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #76736f;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
