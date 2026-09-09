@@ -153,11 +153,10 @@ if (moreShare) {
     if (navigator.share) {
 
       try {
-        await navigator.share({
-          title: "시훈 🤍 은빈",
-          text: "시훈🤍은빈의 결혼식에 초대합니다.",
-          url: window.location.href
-        });
+await navigator.share({
+  title: "시훈 🤍 은빈",
+  url: window.location.href
+});
 
       } catch (error) {
         // 공유창을 닫은 경우 아무것도 하지 않음
