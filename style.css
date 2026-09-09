@@ -1811,3 +1811,9 @@ body::before {
     transform: translateY(0);
   }
 }
+/* 사진 저장 및 드래그 방지 */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
