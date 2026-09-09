@@ -445,22 +445,22 @@ function updateMusicIcon() {
 
   if (!icon) return;
 
-  if (weddingMusic.paused) {
-    // 일시정지 상태 → PAUSE 아이콘
-    icon.innerHTML = `
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7 5H10V19H7V5Z"></path>
-        <path d="M14 5H17V19H14V5Z"></path>
-      </svg>
-    `;
-  } else {
-    // 재생 상태 → PLAY 아이콘
-    icon.innerHTML = `
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M8 5.5L19 12L8 18.5V5.5Z"></path>
-      </svg>
-    `;
-  }
+ if (weddingMusic.paused) {
+  // 일시정지 상태 → PLAY 아이콘
+  icon.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8 5.5L19 12L8 18.5V5.5Z"></path>
+    </svg>
+  `;
+} else {
+  // 재생 상태 → PAUSE 아이콘
+  icon.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 5H10V19H7V5Z"></path>
+      <path d="M14 5H17V19H14V5Z"></path>
+    </svg>
+  `;
+}
 }
 
 // 다른 재생 컨텍스트에서 음악을 시작하면
