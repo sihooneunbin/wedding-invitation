@@ -1727,8 +1727,8 @@ body::before {
 .music-button {
   position: fixed;
   right: 18px;
-  top: 50%;
-  transform: translateY(-50%);
+   bottom: 25px;
+  transform: none;
   width: 44px;
   height: 44px;
   border: 1px solid #d8d5cf;
