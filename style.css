@@ -1219,13 +1219,11 @@ main,
 .hero-photo,
 .ending-photo {
   opacity: 0;
-  transform: translateY(25px);
-
+  transform: translateY(35px);
   transition:
     opacity 1s ease,
     transform 1s ease;
 }
-
 .section.visible,
 .hero-photo.visible,
 .ending-photo.visible {
@@ -1682,15 +1680,14 @@ body::before {
 .parent-line > strong:not(:last-child),
 .parent-line > small {
   opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
+  transform: translateX(-35px);
+  transition: opacity 1s ease, transform 1s ease;
 }
-
 /* 신랑·신부 이름 오른쪽 */
 .parent-line > strong:last-child {
   opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
+  transform: translateX(35px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 /* 등장 */
@@ -1776,7 +1773,7 @@ body::before {
 }
 
 .story.section.visible .story-item {
-  animation: storyPhotoUp 0.8s ease forwards;
+  animation: storyPhotoUp 1s ease forwards;
 }
 
 .story.section.visible .story-item:nth-child(1) {
