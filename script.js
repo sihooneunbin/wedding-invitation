@@ -437,20 +437,49 @@ if (dday) {
 const musicButton = document.getElementById("musicButton");
 const weddingMusic = document.getElementById("weddingMusic");
 
-if (musicButton && weddingMusic) {
+const musicChannel = new BroadcastChannel("wedding-music-channel");
 
+const musicId =
+  Date.now().toString() + Math.random().toString(36).slice(2);
+
+function stopMusic() {
+  if (weddingMusic && !weddingMusic.paused) {
+    weddingMusic.pause();
+  }
+}
+
+// 다른 페이지에서 음악을 시작하면 현재 페이지 음악 정지
+musicChannel.addEventListener("message", (event) => {
+  if (event.data === "stop-other-music") {
+    stopMusic();
+  }
+});
+
+// 내가 음악을 시작하기 전에 다른 페이지의 음악 정지
+function playWeddingMusic() {
+  musicChannel.postMessage("stop-other-music");
+
+  weddingMusic.play().catch(() => {});
+}
+
+// 페이지가 열리면 자동재생 시도
+if (weddingMusic) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      playWeddingMusic();
+    }, 100);
+  });
+}
+
+// 음악 버튼
+if (musicButton && weddingMusic) {
   musicButton.addEventListener("click", async () => {
 
     if (weddingMusic.paused) {
-      try {
-        await weddingMusic.play();
-      } catch (error) {
-        console.log("음악 재생 실패:", error);
-      }
+      playWeddingMusic();
     } else {
       weddingMusic.pause();
     }
 
   });
-
 }
