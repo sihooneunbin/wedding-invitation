@@ -329,8 +329,9 @@ function closeGallery() {
 function showGalleryImage() {
   const img = galleryImages[currentGalleryIndex];
 
-  galleryModalImage.src = img.src;
-  galleryModalImage.alt = img.alt || "";
+galleryModalImage.src = img.src;
+galleryModalImage.alt = img.alt || "";
+galleryModalImage.draggable = false;
 
   galleryCount.textContent =
     `${currentGalleryIndex + 1} / ${galleryImages.length}`;
