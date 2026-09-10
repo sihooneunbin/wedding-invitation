@@ -2033,3 +2033,20 @@ aspect-ratio: 1 / 1 !important;
   user-select: none;
   -webkit-user-select: none;
 }
+.story-less {
+  grid-column: 1 / -1;
+  justify-self: center;
+
+  margin-top: 14px;
+  padding: 0;
+
+  border: 0;
+  background: none;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: #77736f;
+
+  cursor: pointer;
+}
