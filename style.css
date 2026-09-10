@@ -1823,18 +1823,24 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-.couple-photo:nth-child(1) {
+.couple-photo:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   background-image: url("images/groom.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 1 / 1;
 }
 
-.couple-photo:nth-child(2) {
+.couple-photo:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   background-image: url("images/bride.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 1 / 1;
 }
