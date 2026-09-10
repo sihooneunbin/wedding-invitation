@@ -2074,3 +2074,14 @@ aspect-ratio: 1 / 1 !important;
   position: relative;
   top: 3px;
 }
+/* OUR STORY 갤러리 전체 좌우 여백 */
+.story-gallery {
+  width: calc(100% - 34px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 사진 세로형 */
+.story-item {
+  aspect-ratio: 1 / 1.28;
+}
