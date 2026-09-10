@@ -280,7 +280,6 @@ if (storyGallery) {
 }
 
 KakaoMapInit();
-KakaoMapInit();
 
 function KakaoMapInit() {
   const container = document.getElementById("kakaoMap");
@@ -485,97 +484,7 @@ galleryModal.addEventListener("touchend", (e) => {
 setupGalleryModal();
 }
 
-/* 갤러리 닫기 */
-function closeGallery() {
-  galleryModal.classList.remove("active");
-  document.body.style.overflow = "";
-}
 
-/* 사진 보여주기 */
-function showGalleryImage() {
-  const img = galleryImages[currentGalleryIndex];
-
-galleryModalImage.src = img.src;
-galleryModalImage.alt = img.alt || "";
-galleryModalImage.draggable = false;
-
-  galleryCount.textContent =
-    `${currentGalleryIndex + 1} / ${galleryImages.length}`;
-}
-
-/* 이전 사진 */
-function showPreviousImage() {
-  currentGalleryIndex--;
-
-  if (currentGalleryIndex < 0) {
-    currentGalleryIndex = galleryImages.length - 1;
-  }
-
-  showGalleryImage();
-}
-
-/* 다음 사진 */
-function showNextImage() {
-  currentGalleryIndex++;
-
-  if (currentGalleryIndex >= galleryImages.length) {
-    currentGalleryIndex = 0;
-  }
-
-  showGalleryImage();
-}
-
-/* 버튼 */
-if (galleryClose) {
-  galleryClose.addEventListener("click", closeGallery);
-}
-
-if (galleryPrev) {
-  galleryPrev.addEventListener("click", showPreviousImage);
-}
-
-if (galleryNext) {
-  galleryNext.addEventListener("click", showNextImage);
-}
-
-/* 배경 클릭하면 닫기 */
-if (galleryModal) {
-  galleryModal.addEventListener("click", (e) => {
-    if (e.target === galleryModal) {
-      closeGallery();
-    }
-  });
-}
-/* 키보드 */
-document.addEventListener("keydown", (e) => {
-  if (!galleryModal.classList.contains("active")) return;
-
-  if (e.key === "Escape") closeGallery();
-  if (e.key === "ArrowLeft") showPreviousImage();
-  if (e.key === "ArrowRight") showNextImage();
-});
-
-/* 모바일 좌우 스와이프 */
-galleryModal.addEventListener("touchstart", (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-});
-
-galleryModal.addEventListener("touchend", (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-
-  const distance = touchEndX - touchStartX;
-
-  if (Math.abs(distance) < 50) return;
-
-  if (distance < 0) {
-    showNextImage();
-  } else {
-    showPreviousImage();
-  }
-});
-
-/* 실행 */
-setupGalleryModal();
 /* D-DAY */
 
 const weddingDate = new Date("2026-12-12T16:00:00");
