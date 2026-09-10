@@ -287,7 +287,7 @@ item.addEventListener("click", () => {
 
   lessButton.type = "button";
   lessButton.className = "story-less";
-  lessButton.textContent = "⌃ LESS";
+lessButton.innerHTML = '<span class="less-arrow">^</span> LESS';
 
   lessButton.addEventListener("click", (e) => {
 
