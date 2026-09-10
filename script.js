@@ -258,17 +258,68 @@ if (storyGallery) {
         </div>
       `;
 
- item.addEventListener("click", () => {
+item.addEventListener("click", () => {
 
+  /* 이미 펼쳐져 있으면 다시 실행하지 않음 */
+  if (storyGallery.classList.contains("expanded")) {
+    return;
+  }
+
+  storyGallery.classList.add("expanded");
+
+  /* 7, 8번 사진 펼치기 */
   storyGallery
     .querySelectorAll(".extra-photo")
     .forEach((photo) => {
       photo.style.display = "block";
     });
 
+  /* MORE 사진을 일반 사진으로 변경 */
   item.classList.remove("story-more");
   item.innerHTML = "";
 
+  /* LESS 버튼이 이미 있으면 만들지 않음 */
+  if (document.querySelector(".story-less")) {
+    return;
+  }
+
+  const lessButton = document.createElement("button");
+
+  lessButton.type = "button";
+  lessButton.className = "story-less";
+  lessButton.textContent = "− LESS";
+
+  lessButton.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    /* 추가 사진 접기 */
+    storyGallery
+      .querySelectorAll(".extra-photo")
+      .forEach((photo) => {
+        photo.style.display = "none";
+      });
+
+    storyGallery.classList.remove("expanded");
+
+    /* LESS 버튼 삭제 */
+    lessButton.remove();
+
+    /* 다시 MORE 상태로 */
+    item.classList.add("story-more");
+
+    item.innerHTML = `
+      <div class="more-text">
+        <strong>+2</strong>
+        <span>MORE</span>
+      </div>
+    `;
+  });
+
+  /* 갤러리 바로 아래에 LESS 표시 */
+  storyGallery.insertAdjacentElement("afterend", lessButton);
+
+});
   /* LESS 버튼 */
   const lessButton = document.createElement("button");
   lessButton.type = "button";
