@@ -1857,3 +1857,18 @@ img {
   left: auto;
   right: 0;
 }
+.couple-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.28;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.groom-image {
+  background-image: url("images/groom.jpg");
+}
+
+.bride-image {
+  background-image: url("images/bride.jpg");
+}
