@@ -1844,19 +1844,7 @@ img {
 .couple-photo:nth-child(2) {
   background-image: url("images/bride.jpg");
 }
-
-/* 신랑·신부 이름 */
-.couple-photo p {
-  position: absolute;
-  left: 0;
-  bottom: -28px;
-  margin: 0;
-}
-
-.couple-photo:last-child p {
-  left: auto;
-  right: 0;
-}
+/* 신랑·신부 사진 */
 .couple-image {
   width: 100%;
   aspect-ratio: 1 / 1.28;
@@ -1871,4 +1859,23 @@ img {
 
 .bride-image {
   background-image: url("images/bride.jpg");
+}
+
+/* 신랑·신부 이름 */
+.couple-photo p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #45413d;
+}
+
+.couple-photo p em {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f3b37;
+}
+
+.couple-photo:last-child {
+  text-align: right;
 }
