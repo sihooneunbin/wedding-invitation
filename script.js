@@ -482,8 +482,6 @@ galleryModal.addEventListener("touchend", (e) => {
 
 /* 실행 */
 setupGalleryModal();
-}
-
 
 /* D-DAY */
 
