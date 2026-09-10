@@ -1823,3 +1823,16 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+.couple-photo:nth-child(1) {
+  background-image: url("images/groom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.couple-photo:nth-child(2) {
+  background-image: url("images/bride.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
