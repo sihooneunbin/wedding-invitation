@@ -86,7 +86,8 @@ main,
 
 .header-title {
   font-family:"Cormorant Garamond", serif;
-  font-size: 11px;
+  font-size: 20px;
+    font-weight: 600;
   letter-spacing: 0.22em;
   color: #756f69;
 }
