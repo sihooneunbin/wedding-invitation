@@ -1844,22 +1844,6 @@ img {
 .couple-photo:nth-child(2) {
   background-image: url("images/bride.jpg");
 }
-/* 신랑·신부 사진 */
-.couple-image {
-  width: 100%;
-  aspect-ratio: 1 / 1.28;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.groom-image {
-  background-image: url("images/groom.jpg");
-}
-
-.bride-image {
-  background-image: url("images/bride.jpg");
-}
 
 /* 신랑·신부 이름 */
 .couple-photo p {
