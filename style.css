@@ -2063,3 +2063,8 @@ aspect-ratio: 1 / 1 !important;
     transform: translateY(0);
   }
 }
+.less-arrow {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
