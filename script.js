@@ -320,36 +320,6 @@ item.addEventListener("click", () => {
   storyGallery.insertAdjacentElement("afterend", lessButton);
 
 });
-  /* LESS 버튼 */
-  const lessButton = document.createElement("button");
-  lessButton.type = "button";
-  lessButton.className = "story-less";
-  lessButton.textContent = "− LESS";
-
-  lessButton.addEventListener("click", (e) => {
-    e.stopPropagation();
-
-    storyGallery
-      .querySelectorAll(".extra-photo")
-      .forEach((photo) => {
-        photo.style.display = "none";
-      });
-
-    lessButton.remove();
-
-    item.classList.add("story-more");
-
-    item.innerHTML = `
-      <div class="more-text">
-        <strong>+2</strong>
-        <span>MORE</span>
-      </div>
-    `;
-  });
-
-  storyGallery.appendChild(lessButton);
-
-});
     }
 
     storyGallery.appendChild(item);
