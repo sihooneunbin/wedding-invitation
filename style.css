@@ -1817,24 +1817,41 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
+
+/* 메인 사진 */
 .hero-photo {
   background-image: url("images/main.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.couple-photo:nth-child(1)::before {
-  content: "";
-  display: block;
-  width: 100%;
+
+/* 신랑·신부 사진 */
+.couple-photo {
+  position: relative;
   aspect-ratio: 1 / 1;
-  background: url("images/groom.jpg") center center / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.couple-photo:nth-child(2)::before {
-  content: "";
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background: url("images/bride.jpg") center center / cover no-repeat;
+.couple-photo:nth-child(1) {
+  background-image: url("images/groom.jpg");
+}
+
+.couple-photo:nth-child(2) {
+  background-image: url("images/bride.jpg");
+}
+
+/* 신랑·신부 이름 */
+.couple-photo p {
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  margin: 0;
+}
+
+.couple-photo:last-child p {
+  left: auto;
+  right: 0;
 }
