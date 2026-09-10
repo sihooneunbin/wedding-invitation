@@ -1828,10 +1828,7 @@ img {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url("images/groom.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("images/groom.jpg") center center / cover no-repeat;
 }
 
 .couple-photo:nth-child(2)::before {
@@ -1839,8 +1836,5 @@ img {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url("images/bride.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("images/bride.jpg") center center / cover no-repeat;
 }
