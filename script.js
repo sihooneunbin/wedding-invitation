@@ -258,21 +258,47 @@ if (storyGallery) {
         </div>
       `;
 
-      item.addEventListener("click", () => {
+ item.addEventListener("click", () => {
 
-        /* 7, 8번 펼치기 */
-        storyGallery
-          .querySelectorAll(".extra-photo")
-          .forEach((photo) => {
-            photo.style.display = "block";
-          });
+  storyGallery
+    .querySelectorAll(".extra-photo")
+    .forEach((photo) => {
+      photo.style.display = "block";
+    });
 
-        /* 6번째도 원래 사진으로 변경 */
-        item.classList.remove("story-more");
-        item.innerHTML = "";
+  item.classList.remove("story-more");
+  item.innerHTML = "";
 
+  /* LESS 버튼 */
+  const lessButton = document.createElement("button");
+  lessButton.type = "button";
+  lessButton.className = "story-less";
+  lessButton.textContent = "− LESS";
+
+  lessButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    storyGallery
+      .querySelectorAll(".extra-photo")
+      .forEach((photo) => {
+        photo.style.display = "none";
       });
 
+    lessButton.remove();
+
+    item.classList.add("story-more");
+
+    item.innerHTML = `
+      <div class="more-text">
+        <strong>+2</strong>
+        <span>MORE</span>
+      </div>
+    `;
+  });
+
+  storyGallery.appendChild(lessButton);
+
+});
     }
 
     storyGallery.appendChild(item);
