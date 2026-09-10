@@ -1829,7 +1829,7 @@ img {
 /* 신랑·신부 사진 */
 .couple-image {
   width: 100%;
-  height: 205px;
+  aspect-ratio: 1 / 1.28;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1842,7 +1842,6 @@ img {
 .bride-image {
   background-image: url("bride.jpg");
 }
-
 /* 신랑·신부 이름 */
 .couple-photo p {
   margin-top: 8px;
