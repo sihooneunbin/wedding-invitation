@@ -1827,21 +1827,19 @@ img {
 }
 
 /* 신랑·신부 사진 */
-.couple-photo {
-  position: relative;
+.couple-image {
   width: 100%;
-  aspect-ratio: 1 / 1;
-
+  height: 205px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.couple-photo:nth-child(1) {
+.groom-image {
   background-image: url("images/groom.jpg");
 }
 
-.couple-photo:nth-child(2) {
+.bride-image {
   background-image: url("images/bride.jpg");
 }
 
