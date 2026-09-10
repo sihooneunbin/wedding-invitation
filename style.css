@@ -466,7 +466,7 @@ main,
 
 .calendar-week {
   margin-bottom: 20px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Pretendard", serif;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -475,7 +475,7 @@ main,
 
 .calendar-days {
   row-gap: 18px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Pretendard", serif;
   font-size: 17px;
   font-weight: 400;
   color: #746d66;
