@@ -1861,3 +1861,9 @@ img {
 .couple-photo:last-child {
   text-align: right;
 }
+.couple-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
