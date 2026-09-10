@@ -2065,6 +2065,12 @@ aspect-ratio: 1 / 1 !important;
 }
 .less-arrow {
   display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-left: 1.5px solid #a49a90;
+  border-top: 1.5px solid #a49a90;
+  transform: rotate(45deg);
+  margin-right: 5px;
   position: relative;
-  top: 2px;
+  top: 3px;
 }
