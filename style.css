@@ -1836,11 +1836,11 @@ img {
 }
 
 .groom-image {
-  background-image: url("images/groom.jpg");
+  background-image: url("groom.jpg");
 }
 
 .bride-image {
-  background-image: url("images/bride.jpg");
+  background-image: url("bride.jpg");
 }
 
 /* 신랑·신부 이름 */
