@@ -1820,7 +1820,7 @@ img {
 
 /* 메인 사진 */
 .hero-photo {
-  background-image: url("images/main.jpg");
+  background-image: url("main.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
