@@ -1941,3 +1941,94 @@ aspect-ratio: 1 / 1 !important;
 .couple-photo:last-child p {
   text-align: right !important;
 }
+/* =========================================
+   OUR STORY 최종 갤러리
+========================================= */
+
+.story-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.story-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+/* MORE 어둡게 */
+.story-more::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+/* +2 MORE 글씨 */
+.more-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+}
+
+.more-text strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.more-text span {
+  margin-top: 5px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+/* 추가 사진 */
+.extra-photo {
+  animation: storyFadeIn 0.45s ease both;
+}
+
+@keyframes storyFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* 확대 갤러리도 이미지 저장 방지 */
+#galleryModalImage {
+  width: 90%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
