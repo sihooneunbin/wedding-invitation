@@ -1817,3 +1817,9 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
+.hero-photo {
+  background-image: url("images/main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
