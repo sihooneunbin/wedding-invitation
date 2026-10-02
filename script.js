@@ -122,16 +122,8 @@ const kakaoShare = document.getElementById("kakaoShare");
 if (kakaoShare) {
   kakaoShare.addEventListener("click", () => {
 
-    Kakao.Share.sendDefault({
-      objectType: "text",
-
-      text: "시훈🤍은빈 소중한 날에 함께해 주세요.",
-
-      link: {
-        mobileWebUrl: window.location.href,
-        webUrl: window.location.href
-      }
-
+    Kakao.Share.sendCustom({
+      templateId: 137687
     });
 
   });
