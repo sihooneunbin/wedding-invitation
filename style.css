@@ -2106,7 +2106,7 @@ aspect-ratio: 1 / 1 !important;
 .love-story-text {
   position: relative;
   z-index: 2;
-  margin-top: -10px;
+  margin-top: -18px;
   margin-left: -2%;
 
   font-family: "Funky Signature", cursive;
@@ -2118,12 +2118,12 @@ aspect-ratio: 1 / 1 !important;
 }
 
 .love-story-korean {
-  margin-top: 20px;
+  margin-top: 12px;
 
   font-family: "Pretendard", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.9;
+  line-height: 1.8;
   color: #8b847d;
   letter-spacing: -0.02em;
 }
