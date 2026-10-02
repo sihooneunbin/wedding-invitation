@@ -2119,6 +2119,7 @@ aspect-ratio: 1 / 1 !important;
 
 .love-story-korean {
   margin-top: 12px;
+  margin-left: 0;
 
   font-family: "Pretendard", sans-serif;
   font-size: 12px;
@@ -2126,4 +2127,5 @@ aspect-ratio: 1 / 1 !important;
   line-height: 1.8;
   color: #8b847d;
   letter-spacing: -0.02em;
+  text-align: left;
 }
