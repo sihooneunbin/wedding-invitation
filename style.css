@@ -2086,3 +2086,33 @@ aspect-ratio: 1 / 1 !important;
 .story-item {
   aspect-ratio: 1 / 1.28;
 }
+/* LOVE STORY */
+.love-story {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.love-story-photo {
+  width: 82%;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+  background-image: url("원하는사진.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.love-story-text {
+  margin-top: -20px;
+  margin-left: -5%;
+  position: relative;
+  z-index: 2;
+
+  font-family: "Funky Signature", cursive;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: left;
+  color: #4b4743;
+}
