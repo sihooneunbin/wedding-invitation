@@ -2135,3 +2135,21 @@ aspect-ratio: 1 / 1 !important;
   letter-spacing: -0.02em;
   text-align: left;
 }
+/* 달력 날짜 헤더 */
+.calendar-section h2 {
+  font-family: "Pretendard", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  color: #756f69 !important;
+  margin: 0 !important;
+}
+
+.calendar-date-info {
+  margin-top: 12px !important;
+  font-family: "Pretendard", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #9a938c !important;
+  letter-spacing: 0 !important;
+}
