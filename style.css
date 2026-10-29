@@ -2113,3 +2113,8 @@ aspect-ratio: 1 / 1 !important;
   color: #9a938c !important;
   letter-spacing: 0 !important;
 }
+/* 전체 배경색 밝은 아이보리로 변경 */
+html,
+body {
+  background-color: #F8F7F3 !important;
+}
