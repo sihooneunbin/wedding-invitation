@@ -1608,12 +1608,12 @@ main,
 .message,
 .share,
 .ending {
-  background: #f0eee8;
+  background: #F8F7F3;
 }
 
 :root {
-  --bg: #f0eee8;
-  --paper: #f0eee8;
+  --bg: #F8F7F3;
+  --paper: #F8F7F3;
 }
 /* 종이 질감 */
 body::before {
@@ -1625,8 +1625,8 @@ body::before {
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.16'/%3E%3C/svg%3E");
 
-  opacity: 1.2;
-  mix-blend-mode: multiply;
+opacity: 0.25;
+mix-blend-mode: multiply;
 }
 /* D-DAY */
 
